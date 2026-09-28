@@ -1,5 +1,7 @@
 # Global Pseudo-True Representation Exchange in Under-Modelled Spectral Fitting: certificates and reproducibility code
 
+[![Zenodo DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23013068.svg)](https://doi.org/10.5281/zenodo.23013068)
+
 When a spectral model with a fixed number of sinusoids is fitted by least squares to a record that contains more components, it estimates a *pseudo-true* lower-order representation of the finite record. For a specified family of finite three-tone records fitted with two tones, the globally optimal two-tone representation switches discontinuously between two distinct, separated, locally regular fits as an omitted weak component grows. For a centred, phase-aligned close pair, the critical omitted amplitude follows ε_c = λ_N z² + c_N z⁴ + O(z⁶) in the normalized spacing z. The global statements rest on analytical arguments whose computational hypotheses are verified by directed-rounding interval arithmetic.
 
 This repository is a code-and-data companion, not a copy of the manuscript. It contains:
