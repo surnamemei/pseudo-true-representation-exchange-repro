@@ -1,0 +1,5 @@
+[02:30:46][S0] === stage 0 (s0_baseline) start
+[02:30:47][S0] S0 baseline CA: 1 configs x 101 points = 101 GS(P) tasks
+[02:30:51][S0] mpmath 50-digit joint crossing solve ...
+[02:30:51][S0] Stage 0 numeric pass=True eps_c=0.2481906301722716
+[02:30:51][S0] === stage 0 done in 4.4 s

@@ -1,0 +1,3 @@
+# Keep every file byte-for-byte as archived: no line-ending conversion on any platform,
+# so manifests/SHA256SUMS and the frozen SHA-256 manifests also verify after a clone on Windows.
+* -text

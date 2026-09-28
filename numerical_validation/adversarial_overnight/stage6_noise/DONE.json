@@ -1,0 +1,188 @@
+{
+ "n_trials_per_setting": 1000,
+ "solver_invariance": {
+  "level": "P",
+  "records": 600,
+  "prod_disagreements": 0,
+  "prod_rate": 0.0,
+  "legacy_disagreements": 0,
+  "legacy_rate": 0.0,
+  "seconds": 34.4480459690094,
+  "ref_label_counts": {
+   "A": 294,
+   "B": 294,
+   "OUT": 12
+  },
+  "accepted_level": "P"
+ },
+ "hypotheses": {
+  "H1": true,
+  "H2": true,
+  "H3": true,
+  "TSP_consequence": true
+ },
+ "H1_detail": [
+  {
+   "snr": 30,
+   "eta": -0.2,
+   "branch": "A",
+   "n": 1000,
+   "ratio": 0.9799535071561754,
+   "ok": true
+  },
+  {
+   "snr": 30,
+   "eta": -0.15,
+   "branch": "A",
+   "n": 1000,
+   "ratio": 1.0157031304933402,
+   "ok": true
+  },
+  {
+   "snr": 30,
+   "eta": -0.1,
+   "branch": "A",
+   "n": 976,
+   "ratio": 1.085333958152961,
+   "ok": true
+  },
+  {
+   "snr": 30,
+   "eta": 0.1,
+   "branch": "B",
+   "n": 968,
+   "ratio": 1.0300632484962715,
+   "ok": true
+  },
+  {
+   "snr": 30,
+   "eta": 0.15,
+   "branch": "B",
+   "n": 997,
+   "ratio": 0.9978386824068988,
+   "ok": true
+  },
+  {
+   "snr": 30,
+   "eta": 0.2,
+   "branch": "B",
+   "n": 1000,
+   "ratio": 0.9856304258705652,
+   "ok": true
+  },
+  {
+   "snr": 40,
+   "eta": -0.2,
+   "branch": "A",
+   "n": 1000,
+   "ratio": 0.9900449067931469,
+   "ok": true
+  },
+  {
+   "snr": 40,
+   "eta": -0.15,
+   "branch": "A",
+   "n": 1000,
+   "ratio": 0.9752833015608267,
+   "ok": true
+  },
+  {
+   "snr": 40,
+   "eta": -0.1,
+   "branch": "A",
+   "n": 1000,
+   "ratio": 1.0477702576731107,
+   "ok": true
+  },
+  {
+   "snr": 40,
+   "eta": 0.1,
+   "branch": "B",
+   "n": 1000,
+   "ratio": 1.0809069281755967,
+   "ok": true
+  },
+  {
+   "snr": 40,
+   "eta": 0.15,
+   "branch": "B",
+   "n": 1000,
+   "ratio": 0.9063352257087781,
+   "ok": true
+  },
+  {
+   "snr": 40,
+   "eta": 0.2,
+   "branch": "B",
+   "n": 1000,
+   "ratio": 1.0115034257538476,
+   "ok": true
+  }
+ ],
+ "H2_detail": [
+  {
+   "snr": 20,
+   "MSE_to_A": 79.21604737994875,
+   "local_trace_A": 0.35922537539293103,
+   "ratio": 220.51907467088026,
+   "ok": true
+  },
+  {
+   "snr": 30,
+   "MSE_to_A": 79.64318913107665,
+   "local_trace_A": 0.03592253753929303,
+   "ratio": 2217.0813808451258,
+   "ok": true
+  },
+  {
+   "snr": 40,
+   "MSE_to_A": 80.05935383688004,
+   "local_trace_A": 0.003592253753929305,
+   "ratio": 22286.6643953838,
+   "ok": true
+  }
+ ],
+ "H3_detail": [
+  {
+   "snr": 20,
+   "P_A": 0.464,
+   "P_B": 0.489,
+   "ok": true
+  },
+  {
+   "snr": 30,
+   "P_A": 0.51,
+   "P_B": 0.49,
+   "ok": true
+  },
+  {
+   "snr": 40,
+   "P_A": 0.508,
+   "P_B": 0.492,
+   "ok": true
+  }
+ ],
+ "probit_widths": {
+  "20": {
+   "width_10_90": 0.47896827390478575,
+   "intercept": -0.13036214928359785,
+   "slope": -5.351300432058932,
+   "eta50": -0.024360835452746307
+  },
+  "30": {
+   "width_10_90": 0.12950250986506612,
+   "intercept": 0.0059906413633367345,
+   "slope": -19.791918579491636,
+   "eta50": 0.00030268118471062376
+  },
+  "40": {
+   "width_10_90": 0.04189809468090296,
+   "intercept": 0.0196816392891089,
+   "slope": -61.174694233947015,
+   "eta50": 0.0003217284456517509
+  }
+ },
+ "local_hessian_fd_max_rel_err": 4.197260528555836e-11,
+ "evidence_level": "GLOBAL_NUMERICAL (Monte Carlo with numerical global search)",
+ "local_theory_label": "local Hessian (sandwich) covariance approximation - not a CRB/MCRB"
+}

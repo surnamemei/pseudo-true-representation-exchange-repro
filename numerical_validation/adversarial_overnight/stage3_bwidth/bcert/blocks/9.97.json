@@ -1,0 +1,48 @@
+{
+ "block": [
+  "9.97",
+  "9.98"
+ ],
+ "n_sub": 100,
+ "local_all_ok": true,
+ "local_fail": [],
+ "window_A": [
+  -4.185416812946464,
+  -3.9767551200210822
+ ],
+ "window_B": [
+  12.31146969499714,
+  12.515715176806046
+ ],
+ "coalescent_margin_min": "0.0008526664326",
+ "tail_margin_min": "0.003710807072",
+ "visits": 2500001,
+ "leaves": 1250195,
+ "unresolved": 414,
+ "kinds": {
+  "cost": 1001920,
+  "gradient": 145905,
+  "monotone": 47770,
+  "convex_window": 54600
+ },
+ "boxes_inside_windows": true,
+ "coverage_exact": false,
+ "b_ranges_used": 199,
+ "ok": false,
+ "seconds": 6173.808333158493,
+ "min_margins": {
+  "Rvv_A": 6.39661073595e-05,
+  "Rvv_B": 0.00095061926997,
+  "slope": 0.107394452083,
+  "beta_A": 0.125440314499,
+  "beta_B": 0.0641028113488,
+  "gram": 0.237837588826,
+  "contraction_max": 0.5298089629785141,
+  "coalescent": 0.0008526664325681607,
+  "tail": 0.003710807072130662,
+  "lambda_range": [
+   0.06647461997156487,
+   0.0664852995109869
+  ]
+ }
+}

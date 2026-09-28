@@ -1,0 +1,32 @@
+{
+ "date": "2026-09-28",
+ "host_os": "Windows 11 host, WSL2 kernel 6.6.87.2-microsoft-standard-WSL2",
+ "distribution": "Ubuntu 24.04.4 LTS",
+ "cpu": "AMD Ryzen 9 9950X3D 16-Core Processor",
+ "logical_cpus": 32,
+ "memory_visible_to_wsl_gb": 31,
+ "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+ "pip_freeze": [
+  "contourpy==1.4.0",
+  "cycler==0.12.1",
+  "fonttools==4.66.0",
+  "kiwisolver==1.5.1",
+  "llvmlite==0.45.1",
+  "matplotlib==3.10.6",
+  "mpmath==1.3.0",
+  "numba==0.62.1",
+  "numpy==2.3.5",
+  "packaging==26.3",
+  "pillow==12.3.0",
+  "pyparsing==3.3.3",
+  "python-dateutil==2.9.0.post0",
+  "python-flint==0.9.0",
+  "scipy==1.16.3",
+  "six==1.17.0",
+  "sympy==1.14.0",
+  "tqdm==4.67.1"
+ ],
+ "numpy_build": "{\n  \"Compilers\": {\n    \"c\": {\n      \"name\": \"gcc\",\n      \"linker\": \"ld.bfd\",\n      \"version\": \"14.2.1\",\n      \"commands\": \"cc\"\n    },\n    \"cython\": {\n      \"name\": \"cython\",\n      \"linker\": \"cython\",\n      \"version\": \"3.2.1\",\n      \"commands\": \"cython\"\n    },\n    \"c++\": {\n      \"name\": \"gcc\",\n      \"linker\": \"ld.bfd\",\n      \"version\": \"14.2.1\",\n      \"commands\": \"c++\"\n    }\n  },\n  \"Machine Information\": {\n    \"host\": {\n      \"cpu\": \"x86_64\",\n      \"family\": \"x86_64\",\n      \"endian\": \"little\",\n      \"system\": \"linux\"\n    },\n    \"build\": {\n      \"cpu\": \"x86_64\",\n      \"family\": \"x86_64\",\n      \"endian\": \"little\",\n      \"system\": \"linux\"\n    }\n  },\n  \"Build Dependencies\": {\n    \"blas\": {\n      \"name\": \"scipy-openblas\",\n      \"found\": true,\n      \"version\": \"0.3.30\",\n      \"detection method\": \"pkgconfig\",\n      \"include directory\": \"/opt/_internal/cpython-3.12.12/lib/python3.12/site-packages/scipy_openblas64/include\",\n      \"lib directory\": \"/opt/_internal/cpython-3.12.12/lib/python3.12/site-packages/scipy_openblas64/lib\",\n      \"openblas configuration\": \"OpenBLAS 0.3.30  USE64BITINT DYNAMIC_ARCH NO_AFFINITY Haswell MAX_THREADS=64\",\n      \"pc file directory\": \"/project/.openblas\"\n    },\n    \"lapack\": {\n      \"name\": \"scipy-openblas\",\n      \"found\": true,\n      \"version\": \"0.3.30\",\n      \"detection method\": \"pkgconfig\",\n      \"include directory\": \"/opt/_internal/cpython-3.12.12/lib/python3.12/site-packages/scipy_openblas64/include\",\n      \"lib directory\": \"/opt/_internal/cpython-3.12.12/lib/python3.12/site-packages/scipy_openblas64/lib\",\n      \"openblas configuration\": \"OpenBLAS 0.3.30  USE64BITINT DYNAMIC_ARCH NO_AFFINITY Haswell MAX_THREADS=64\",\n      \"pc file directory\": \"/project/.openblas\"\n    }\n  },\n  \"Python Information\": {\n    \"path\": \"/tmp/build-env-aw1mwcap/bin/python\",\n    \"version\": \"3.12\"\n  },\n  \"SIMD Extensions\": {\n    \"baseline\": [\n      \"SSE\",\n      \"SSE2\",\n      \"SSE3\"\n    ],\n    \"found\": [\n      \"SSSE3\",\n      \"SSE41\",\n      \"POPCNT\",\n      \"SSE42\",\n      \"AVX\",\n      \"F16C\",\n      \"FMA3\",\n      \"AVX2\",\n      \"AVX512F\",\n      \"AVX512CD\",\n      \"AVX512_SKX\",\n      \"AVX512_CLX\",\n      \"AVX512_CNL\",\n      \"AVX512_ICL\"\n    ],\n    \"not found\": [\n      \"AVX512_KNL\",\n      \"AVX512_KNM\",\n      \"AVX512_SPR\"\n    ]\n  }\n}\n",
+ "threads": "OMP/MKL/OPENBLAS_NUM_THREADS=1; one Python process per command; the seven chains ran concurrently",
+ "python_flint_source": "PyPI wheel python-flint==0.9.0 (FLINT 3.6.0) in the virtual environment; the project's stage12_deps/ (a Windows build) was not copied into the sandbox"
+}

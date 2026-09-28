@@ -1,0 +1,145 @@
+{
+ "time": "2026-09-28T12:15:28+1000",
+ "manifest_files": 766,
+ "unchanged": 732,
+ "changed": [
+  {
+   "path": "REPRODUCIBILITY_README.md",
+   "category": "project documentation (reproducibility guide / status note)"
+  },
+  {
+   "path": "final_submission_readiness.md",
+   "category": "project documentation (reproducibility guide / status note)"
+  },
+  {
+   "path": "paper/CURRENT_VERSION.md",
+   "category": "manuscript/supplement source, figure, or build output"
+  },
+  {
+   "path": "paper/figures/fig1_continuation.pdf",
+   "category": "manuscript/supplement source, figure, or build output"
+  },
+  {
+   "path": "paper/figures/fig2_tangent_landscape.pdf",
+   "category": "manuscript/supplement source, figure, or build output"
+  },
+  {
+   "path": "paper/main_tsp_reviewfriendly.aux",
+   "category": "manuscript/supplement source, figure, or build output"
+  },
+  {
+   "path": "paper/main_tsp_reviewfriendly.bbl",
+   "category": "manuscript/supplement source, figure, or build output"
+  },
+  {
+   "path": "paper/main_tsp_reviewfriendly.blg",
+   "category": "manuscript/supplement source, figure, or build output"
+  },
+  {
+   "path": "paper/main_tsp_reviewfriendly.fdb_latexmk",
+   "category": "manuscript/supplement source, figure, or build output"
+  },
+  {
+   "path": "paper/main_tsp_reviewfriendly.fls",
+   "category": "manuscript/supplement source, figure, or build output"
+  },
+  {
+   "path": "paper/main_tsp_reviewfriendly.log",
+   "category": "manuscript/supplement source, figure, or build output"
+  },
+  {
+   "path": "paper/main_tsp_reviewfriendly.out",
+   "category": "manuscript/supplement source, figure, or build output"
+  },
+  {
+   "path": "paper/main_tsp_reviewfriendly.pdf",
+   "category": "manuscript/supplement source, figure, or build output"
+  },
+  {
+   "path": "paper/main_tsp_reviewfriendly.tex",
+   "category": "manuscript/supplement source, figure, or build output"
+  },
+  {
+   "path": "paper/refs.bib",
+   "category": "manuscript/supplement source, figure, or build output"
+  },
+  {
+   "path": "paper/sections/body_reviewfriendly.tex",
+   "category": "manuscript/supplement source, figure, or build output"
+  },
+  {
+   "path": "paper/sections/continuum_stage14.tex",
+   "category": "manuscript/supplement source, figure, or build output"
+  },
+  {
+   "path": "paper/sections/crossN_table.tex",
+   "category": "manuscript/supplement source, figure, or build output"
+  },
+  {
+   "path": "paper/sections/evidence_table.tex",
+   "category": "manuscript/supplement source, figure, or build output"
+  },
+  {
+   "path": "paper/validate_reviewfriendly.py",
+   "category": "manuscript/supplement source, figure, or build output"
+  },
+  {
+   "path": "supplement/S1_complete_local_proof.tex",
+   "category": "manuscript/supplement source, figure, or build output"
+  },
+  {
+   "path": "supplement/S1b_continuum_largeN.tex",
+   "category": "manuscript/supplement source, figure, or build output"
+  },
+  {
+   "path": "supplement/S2_interval_certificate_protocol.tex",
+   "category": "manuscript/supplement source, figure, or build output"
+  },
+  {
+   "path": "supplement/S3_certificate_tables.tex",
+   "category": "manuscript/supplement source, figure, or build output"
+  },
+  {
+   "path": "supplement/S4_extended_generality.tex",
+   "category": "manuscript/supplement source, figure, or build output"
+  },
+  {
+   "path": "supplement/S5_independent_replay.tex",
+   "category": "manuscript/supplement source, figure, or build output"
+  },
+  {
+   "path": "supplement/S6_strong_pair_phase.tex",
+   "category": "manuscript/supplement source, figure, or build output"
+  },
+  {
+   "path": "supplement/generalN_certificate_table.tex",
+   "category": "manuscript/supplement source, figure, or build output"
+  },
+  {
+   "path": "supplement/supplement.aux",
+   "category": "manuscript/supplement source, figure, or build output"
+  },
+  {
+   "path": "supplement/supplement.fdb_latexmk",
+   "category": "manuscript/supplement source, figure, or build output"
+  },
+  {
+   "path": "supplement/supplement.fls",
+   "category": "manuscript/supplement source, figure, or build output"
+  },
+  {
+   "path": "supplement/supplement.log",
+   "category": "manuscript/supplement source, figure, or build output"
+  },
+  {
+   "path": "supplement/supplement.pdf",
+   "category": "manuscript/supplement source, figure, or build output"
+  },
+  {
+   "path": "supplement/supplement.tex",
+   "category": "manuscript/supplement source, figure, or build output"
+  }
+ ],
+ "missing": [],
+ "changed_outside_manuscript": []
+}

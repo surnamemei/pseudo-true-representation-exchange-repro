@@ -1,0 +1,621 @@
+{
+ "R1_arb_finite_z": {
+  "status": "done",
+  "steps": [
+   {
+    "cmd": [
+     "stage12_full_arb_replay.py",
+     "21"
+    ],
+    "returncode": 0,
+    "seconds": 50.5,
+    "log": "R1_arb_finite_z__stage12_full_arb_replay_21.log"
+   },
+   {
+    "cmd": [
+     "stage12_full_arb_replay.py",
+     "31"
+    ],
+    "returncode": 0,
+    "seconds": 38.0,
+    "log": "R1_arb_finite_z__stage12_full_arb_replay_31.log"
+   },
+   {
+    "cmd": [
+     "stage12_cover_audit.py"
+    ],
+    "returncode": 0,
+    "seconds": 0.8,
+    "log": "R1_arb_finite_z__stage12_cover_audit.log"
+   }
+  ],
+  "verdict": "PASS",
+  "declared_outputs": {
+   "stage12_replay/N21_predicates.csv": {
+    "verdict": "PASS",
+    "reason": "byte-identical"
+   },
+   "stage12_replay/N21_refinement_leaves.csv": {
+    "verdict": "PASS",
+    "reason": "byte-identical"
+   },
+   "stage12_replay/N21_summary.json": {
+    "verdict": "PASS",
+    "reason": "differences confined to volatile",
+    "numeric_values_differing": 0,
+    "max_relative_numeric_difference": "0.000e+3",
+    "worst_numeric": null,
+    "hash_fields": 0,
+    "volatile_fields": 1,
+    "other_differences": 0,
+    "other_examples": []
+   },
+   "stage12_replay/N31_predicates.csv": {
+    "verdict": "PASS",
+    "reason": "byte-identical"
+   },
+   "stage12_replay/N31_refinement_leaves.csv": {
+    "verdict": "PASS",
+    "reason": "byte-identical"
+   },
+   "stage12_replay/N31_summary.json": {
+    "verdict": "PASS",
+    "reason": "differences confined to volatile",
+    "numeric_values_differing": 0,
+    "max_relative_numeric_difference": "0.000e+3",
+    "worst_numeric": null,
+    "hash_fields": 0,
+    "volatile_fields": 1,
+    "other_differences": 0,
+    "other_examples": []
+   },
+   "stage12_replay/coverage_audit.json": {
+    "verdict": "PASS",
+    "reason": "identical after normalizing line endings (CRLF from Windows text mode)"
+   },
+   "stage12_replay/refinement_coverage_audit.json": {
+    "verdict": "PASS",
+    "reason": "identical after normalizing line endings (CRLF from Windows text mode)"
+   }
+  },
+  "other_files_written": {}
+ },
+ "R2_generalN": {
+  "status": "done",
+  "steps": [
+   {
+    "cmd": [
+     "stage12_generalN.py",
+     "11"
+    ],
+    "returncode": 0,
+    "seconds": 110.7,
+    "log": "R2_generalN__stage12_generalN_11.log"
+   },
+   {
+    "cmd": [
+     "stage12_generalN.py",
+     "15"
+    ],
+    "returncode": 0,
+    "seconds": 145.2,
+    "log": "R2_generalN__stage12_generalN_15.log"
+   },
+   {
+    "cmd": [
+     "stage12_generalN.py",
+     "21"
+    ],
+    "returncode": 0,
+    "seconds": 209.5,
+    "log": "R2_generalN__stage12_generalN_21.log"
+   },
+   {
+    "cmd": [
+     "stage12_generalN.py",
+     "31"
+    ],
+    "returncode": 0,
+    "seconds": 371.9,
+    "log": "R2_generalN__stage12_generalN_31.log"
+   },
+   {
+    "cmd": [
+     "stage12_generalN.py",
+     "41"
+    ],
+    "returncode": 0,
+    "seconds": 595.4,
+    "log": "R2_generalN__stage12_generalN_41.log"
+   }
+  ],
+  "verdict": "PASS",
+  "declared_outputs": {
+   "stage12_generalN/N11_certificate.json": {
+    "verdict": "PASS",
+    "reason": "identical after normalizing line endings (CRLF from Windows text mode)"
+   },
+   "stage12_generalN/N11_partition.csv": {
+    "verdict": "PASS",
+    "reason": "byte-identical"
+   },
+   "stage12_generalN/N11_reference.json": {
+    "verdict": "PASS",
+    "reason": "identical after normalizing line endings (CRLF from Windows text mode)"
+   },
+   "stage12_generalN/N11_roots.csv": {
+    "verdict": "PASS",
+    "reason": "byte-identical"
+   },
+   "stage12_generalN/N15_certificate.json": {
+    "verdict": "PASS",
+    "reason": "identical after normalizing line endings (CRLF from Windows text mode)"
+   },
+   "stage12_generalN/N15_partition.csv": {
+    "verdict": "PASS",
+    "reason": "byte-identical"
+   },
+   "stage12_generalN/N15_reference.json": {
+    "verdict": "PASS",
+    "reason": "identical after normalizing line endings (CRLF from Windows text mode)"
+   },
+   "stage12_generalN/N15_roots.csv": {
+    "verdict": "PASS",
+    "reason": "byte-identical"
+   },
+   "stage12_generalN/N21_certificate.json": {
+    "verdict": "PASS",
+    "reason": "identical after normalizing line endings (CRLF from Windows text mode)"
+   },
+   "stage12_generalN/N21_partition.csv": {
+    "verdict": "PASS",
+    "reason": "byte-identical"
+   },
+   "stage12_generalN/N21_reference.json": {
+    "verdict": "PASS",
+    "reason": "identical after normalizing line endings (CRLF from Windows text mode)"
+   },
+   "stage12_generalN/N21_roots.csv": {
+    "verdict": "PASS",
+    "reason": "byte-identical"
+   },
+   "stage12_generalN/N31_certificate.json": {
+    "verdict": "PASS",
+    "reason": "identical after normalizing line endings (CRLF from Windows text mode)"
+   },
+   "stage12_generalN/N31_partition.csv": {
+    "verdict": "PASS",
+    "reason": "byte-identical"
+   },
+   "stage12_generalN/N31_reference.json": {
+    "verdict": "PASS",
+    "reason": "identical after normalizing line endings (CRLF from Windows text mode)"
+   },
+   "stage12_generalN/N31_roots.csv": {
+    "verdict": "PASS",
+    "reason": "byte-identical"
+   },
+   "stage12_generalN/N41_certificate.json": {
+    "verdict": "PASS",
+    "reason": "identical after normalizing line endings (CRLF from Windows text mode)"
+   },
+   "stage12_generalN/N41_partition.csv": {
+    "verdict": "PASS",
+    "reason": "byte-identical"
+   },
+   "stage12_generalN/N41_reference.json": {
+    "verdict": "PASS",
+    "reason": "identical after normalizing line endings (CRLF from Windows text mode)"
+   },
+   "stage12_generalN/N41_roots.csv": {
+    "verdict": "PASS",
+    "reason": "byte-identical"
+   }
+  },
+  "other_files_written": {}
+ },
+ "R3_continuum": {
+  "status": "done",
+  "steps": [
+   {
+    "cmd": [
+     "stage14_continuum.py"
+    ],
+    "returncode": 0,
+    "seconds": 4.8,
+    "log": "R3_continuum__stage14_continuum.log"
+   },
+   {
+    "cmd": [
+     "stage14_continuum_interval.py"
+    ],
+    "returncode": 0,
+    "seconds": 0.1,
+    "log": "R3_continuum__stage14_continuum_interval.log"
+   },
+   {
+    "cmd": [
+     "stage14_continuum_global_hybrid.py"
+    ],
+    "returncode": 0,
+    "seconds": 72.7,
+    "log": "R3_continuum__stage14_continuum_global_hybrid.log"
+   },
+   {
+    "cmd": [
+     "stage14_replay_global.py"
+    ],
+    "returncode": 0,
+    "seconds": 38.1,
+    "log": "R3_continuum__stage14_replay_global.log"
+   },
+   {
+    "cmd": [
+     "stage14_continuum_endpoint_interval.py"
+    ],
+    "returncode": 0,
+    "seconds": 0.0,
+    "log": "R3_continuum__stage14_continuum_endpoint_interval.log"
+   }
+  ],
+  "verdict": "PASS",
+  "declared_outputs": {
+   "stage14_continuum_candidate.json": {
+    "verdict": "PASS",
+    "reason": "identical after normalizing line endings (CRLF from Windows text mode)"
+   },
+   "stage14_continuum_candidate_roots.csv": {
+    "verdict": "PASS",
+    "reason": "byte-identical"
+   },
+   "stage14_continuum_local_interval.json": {
+    "verdict": "PASS",
+    "reason": "identical after normalizing line endings (CRLF from Windows text mode)"
+   },
+   "continuum_global_certificate.json": {
+    "verdict": "PASS",
+    "reason": "same content; JSON key order differs"
+   },
+   "stage14_continuum_global_partition.csv": {
+    "verdict": "PASS",
+    "reason": "byte-identical"
+   },
+   "stage14_continuum_global_roots.csv": {
+    "verdict": "PASS",
+    "reason": "byte-identical"
+   },
+   "stage14_continuum_global_replay.json": {
+    "verdict": "PASS",
+    "reason": "identical after normalizing line endings (CRLF from Windows text mode)"
+   },
+   "stage14_continuum_endpoint_interval.json": {
+    "verdict": "PASS",
+    "reason": "identical after normalizing line endings (CRLF from Windows text mode)"
+   }
+  },
+  "other_files_written": {}
+ },
+ "R4_independent_arb_N0": {
+  "status": "done",
+  "steps": [
+   {
+    "cmd": [
+     "stage16_independent_arb.py"
+    ],
+    "returncode": 0,
+    "seconds": 29.9,
+    "log": "R4_independent_arb_N0__stage16_independent_arb.log"
+   }
+  ],
+  "verdict": "PASS",
+  "declared_outputs": {
+   "independent_N0_replay.json": {
+    "verdict": "PASS",
+    "reason": "byte-identical"
+   },
+   "independent_N0_replay.csv": {
+    "verdict": "PASS",
+    "reason": "byte-identical"
+   }
+  },
+  "other_files_written": {}
+ },
+ "R5_largeN_floor_10001": {
+  "status": "done",
+  "steps": [
+   {
+    "cmd": [
+     "stage17_uniform_trial.py",
+     "10001"
+    ],
+    "returncode": 0,
+    "seconds": 224.8,
+    "log": "R5_largeN_floor_10001__stage17_uniform_trial_10001.log"
+   },
+   {
+    "cmd": [
+     "stage17_refine_uniform.py",
+     "10001"
+    ],
+    "returncode": 0,
+    "seconds": 1.7,
+    "log": "R5_largeN_floor_10001__stage17_refine_uniform_10001.log"
+   },
+   {
+    "cmd": [
+     "stage17_largeN_margin_summary.py"
+    ],
+    "returncode": 0,
+    "seconds": 223.2,
+    "log": "R5_largeN_floor_10001__stage17_largeN_margin_summary.log"
+   },
+   {
+    "cmd": [
+     "stage17_write_largeN.py"
+    ],
+    "returncode": 0,
+    "seconds": 0.0,
+    "log": "R5_largeN_floor_10001__stage17_write_largeN.log"
+   },
+   {
+    "cmd": [
+     "stage17_annotate_condition_thresholds.py"
+    ],
+    "returncode": 0,
+    "seconds": 0.0,
+    "log": "R5_largeN_floor_10001__stage17_annotate_condition_thresholds.log"
+   }
+  ],
+  "verdict": "PASS",
+  "declared_outputs": {
+   "stage17_interval_trial_N10001.json": {
+    "verdict": "PASS",
+    "reason": "differences confined to numeric",
+    "numeric_values_differing": 13,
+    "max_relative_numeric_difference": "4.156e-22",
+    "worst_numeric": [
+     "local.contraction_upper",
+     "[0.1427931312668938030205777889625260140913477731810185773425413681114131, 0.142",
+     "[0.1427931312668938030206371386262502066604413214724161454892119151378266, 0.142"
+    ],
+    "hash_fields": 0,
+    "volatile_fields": 0,
+    "other_differences": 0,
+    "other_examples": []
+   },
+   "stage17_refinement_N10001.json": {
+    "verdict": "PASS",
+    "reason": "differences confined to numeric",
+    "numeric_values_differing": 6,
+    "max_relative_numeric_difference": "8.432e-27",
+    "worst_numeric": [
+     "leaves[2].margin_lower",
+     "0.000014088579267902555204453941441920119754842330692438835753953603599890409939",
+     "0.000014088579267902555204453941560721923502201720725991252614085246714191020687"
+    ],
+    "hash_fields": 0,
+    "volatile_fields": 0,
+    "other_differences": 0,
+    "other_examples": []
+   },
+   "stage17_largeN_margins.json": {
+    "verdict": "PASS",
+    "reason": "differences confined to numeric",
+    "numeric_values_differing": 13,
+    "max_relative_numeric_difference": "4.156e-22",
+    "worst_numeric": [
+     "local.contraction_upper",
+     "[0.1427931312668938030205777889625260140913477731810185773425413681114131, 0.142",
+     "[0.1427931312668938030206371386262502066604413214724161454892119151378266, 0.142"
+    ],
+    "hash_fields": 0,
+    "volatile_fields": 0,
+    "other_differences": 0,
+    "other_examples": []
+   },
+   "tightened_N0_certificate.json": {
+    "verdict": "PASS",
+    "reason": "differences confined to numeric, hash",
+    "numeric_values_differing": 13,
+    "max_relative_numeric_difference": "4.156e-22",
+    "worst_numeric": [
+     "local.contraction_upper",
+     "[0.1427931312668938030205777889625260140913477731810185773425413681114131, 0.142",
+     "[0.1427931312668938030206371386262502066604413214724161454892119151378266, 0.142"
+    ],
+    "hash_fields": 3,
+    "volatile_fields": 0,
+    "other_differences": 0,
+    "other_examples": []
+   },
+   "largeN_condition_thresholds.csv": {
+    "verdict": "PASS",
+    "reason": "differences confined to numeric",
+    "numeric_values_differing": 5,
+    "max_relative_numeric_difference": "4.846e-23",
+    "worst_numeric": [
+     "row8.finite_uniform_lower_at_N10001",
+     "0.000000000412411316746002379100057428705845159268301666923817594555844407852652",
+     "0.000000000412411316746002379100077414100082817951240746786937493857101114053724"
+    ],
+    "hash_fields": 0,
+    "volatile_fields": 0,
+    "other_differences": 0,
+    "other_examples": []
+   }
+  },
+  "other_files_written": {}
+ },
+ "R6_finite_width_eps_0p035": {
+  "status": "done",
+  "steps": [
+   {
+    "cmd": [
+     "stage17_epsilon_refine.py",
+     "0.035",
+     "14287"
+    ],
+    "returncode": 0,
+    "seconds": 118.5,
+    "log": "R6_finite_width_eps_0p035__stage17_epsilon_refine_0p035_14287.log"
+   },
+   {
+    "cmd": [
+     "stage17_epsilon_root_tiling.py",
+     "0.035",
+     "4096"
+    ],
+    "returncode": 0,
+    "seconds": 882.2,
+    "log": "R6_finite_width_eps_0p035__stage17_epsilon_root_tiling_0p035_4096.log"
+   },
+   {
+    "cmd": [
+     "stage17_epsilon_inner_tiled.py",
+     "_0p035",
+     "3000000"
+    ],
+    "returncode": 0,
+    "seconds": 1213.5,
+    "log": "R6_finite_width_eps_0p035__stage17_epsilon_inner_tiled__0p035_3000000.log"
+   },
+   {
+    "cmd": [
+     "stage17_epsilon_joints.py",
+     "_0p035"
+    ],
+    "returncode": 0,
+    "seconds": 956.8,
+    "log": "R6_finite_width_eps_0p035__stage17_epsilon_joints__0p035.log"
+   },
+   {
+    "cmd": [
+     "stage17_epsilon_coverage_audit.py",
+     "0.035"
+    ],
+    "returncode": 0,
+    "seconds": 15.9,
+    "log": "R6_finite_width_eps_0p035__stage17_epsilon_coverage_audit_0p035.log"
+   },
+   {
+    "cmd": [
+     "stage17_write_epsilon_certificate.py",
+     "0.035"
+    ],
+    "returncode": 0,
+    "seconds": 11.8,
+    "log": "R6_finite_width_eps_0p035__stage17_write_epsilon_certificate_0p035.log"
+   },
+   {
+    "cmd": [
+     "stage17_epsilon_coeff_crosscheck.py"
+    ],
+    "returncode": 0,
+    "seconds": 3.4,
+    "log": "R6_finite_width_eps_0p035__stage17_epsilon_coeff_crosscheck.log"
+   }
+  ],
+  "verdict": "PASS",
+  "declared_outputs": {
+   "stage17_epsilon_outer_refinement_0p035_14287.json": {
+    "verdict": "PASS",
+    "reason": "identical after normalizing line endings (CRLF from Windows text mode)"
+   },
+   "stage17_epsilon_root_tiling_0p035.json": {
+    "verdict": "PASS",
+    "reason": "differences confined to numeric",
+    "numeric_values_differing": 2791,
+    "max_relative_numeric_difference": "2.855e-14",
+    "worst_numeric": [
+     "records[4071].branches.A.contraction_upper",
+     "[0.38925342985779025257080900321146453466365715719589930850342784392124940350063",
+     "[0.38925342985777913965956286621087711547363192862703511367762540197714788834362"
+    ],
+    "hash_fields": 0,
+    "volatile_fields": 0,
+    "other_differences": 0,
+    "other_examples": []
+   },
+   "stage17_epsilon_inner_tiled_0p035.json": {
+    "verdict": "PASS",
+    "reason": "identical after normalizing line endings (CRLF from Windows text mode)"
+   },
+   "stage17_epsilon_joints_0p035.json": {
+    "verdict": "PASS",
+    "reason": "identical after normalizing line endings (CRLF from Windows text mode)"
+   },
+   "stage17_epsilon_coverage_audit_0p035.json": {
+    "verdict": "PASS",
+    "reason": "identical after normalizing line endings (CRLF from Windows text mode)"
+   },
+   "finite_width_epsilon_certificate_0p035.json": {
+    "verdict": "PASS",
+    "reason": "differences confined to hash",
+    "numeric_values_differing": 0,
+    "max_relative_numeric_difference": "0.000e+3",
+    "worst_numeric": null,
+    "hash_fields": 5,
+    "volatile_fields": 0,
+    "other_differences": 0,
+    "other_examples": []
+   },
+   "finite_width_epsilon_certificate_0p035.md": {
+    "verdict": "PASS",
+    "reason": "identical after normalizing line endings (CRLF from Windows text mode)"
+   },
+   "epsilon_interval_obligations_0p035.csv": {
+    "verdict": "PASS",
+    "reason": "byte-identical"
+   },
+   "stage17_epsilon_coeff_crosscheck.json": {
+    "verdict": "PASS",
+    "reason": "identical after normalizing line endings (CRLF from Windows text mode)"
+   }
+  },
+  "other_files_written": {
+   "stage17_epsilon_quadratic_trial.json": {
+    "verdict": "PASS",
+    "reason": "identical after normalizing line endings (CRLF from Windows text mode)"
+   }
+  }
+ },
+ "R7_lower_transition": {
+  "status": "done",
+  "steps": [
+   {
+    "cmd": [
+     "stage13_build.py"
+    ],
+    "returncode": 0,
+    "seconds": 11.2,
+    "log": "R7_lower_transition__stage13_build.log"
+   }
+  ],
+  "verdict": "PASS",
+  "declared_outputs": {
+   "lower_transition_certificate.json": {
+    "verdict": "PASS",
+    "reason": "identical after normalizing line endings (CRLF from Windows text mode)"
+   },
+   "tangent_cost_vs_lambda.csv": {
+    "verdict": "PASS",
+    "reason": "byte-identical"
+   },
+   "smallz_global_regimes.csv": {
+    "verdict": "PASS",
+    "reason": "byte-identical"
+   }
+  },
+  "other_files_written": {
+   "paper/figures/fig_stage13_global_cost.pdf": {
+    "verdict": "UNVERIFIED",
+    "reason": "binary file differs"
+   },
+   "smallz_global_cost_figure.pdf": {
+    "verdict": "UNVERIFIED",
+    "reason": "binary file differs"
+   }
+  }
+ },
+ "overall": "PASS"
+}

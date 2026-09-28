@@ -1,0 +1,11 @@
+{
+  "epsilon_interval": [
+    "0.2456906301722773982036098513551920308807846909441829969680288159373386741871575",
+    "0.2506906301722773982036098513551920308807846909441829969680288159373386741871575"
+  ],
+  "tested": 0,
+  "failures": 0,
+  "first_failures": [],
+  "method": "fixed-center exact epsilon quadratics plus projector variation bound",
+  "complete_outer": false
+}

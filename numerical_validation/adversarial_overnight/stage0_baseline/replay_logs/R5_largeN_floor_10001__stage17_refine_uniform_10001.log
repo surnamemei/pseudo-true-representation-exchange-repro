@@ -1,0 +1,10 @@
+{
+  "N0": 10001,
+  "original_cells": 27708,
+  "original_failures": 4,
+  "refined_parents": 4,
+  "visited": 8,
+  "terminal_leaves": 6,
+  "unresolved": [],
+  "complete": true
+}

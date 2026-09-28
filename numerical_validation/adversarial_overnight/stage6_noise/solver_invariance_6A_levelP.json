@@ -1,0 +1,15 @@
+{
+ "level": "P",
+ "records": 600,
+ "prod_disagreements": 0,
+ "prod_rate": 0.0,
+ "legacy_disagreements": 0,
+ "legacy_rate": 0.0,
+ "seconds": 34.4480459690094,
+ "ref_label_counts": {
+  "A": 294,
+  "B": 294,
+  "OUT": 12
+ },
+ "details": []
+}

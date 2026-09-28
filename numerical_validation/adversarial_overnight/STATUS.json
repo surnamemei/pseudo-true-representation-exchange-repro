@@ -1,0 +1,158 @@
+{
+ "run_started": "2026-09-28T02:25:16+1000",
+ "stages": {
+  "99": {
+   "scans_done": 1,
+   "scans_total": 1
+  },
+  "0": {
+   "started": "2026-09-28T02:30:46+1000",
+   "module": "s0_baseline",
+   "status": "numeric_done",
+   "scans_done": 1,
+   "scans_total": 1,
+   "numeric_pass": true,
+   "finished": "2026-09-28T02:30:51+1000",
+   "seconds": 4.4
+  },
+  "1": {
+   "started": "2026-09-28T02:30:51+1000",
+   "module": "s1_window",
+   "status": "done",
+   "scans_done": 16,
+   "scans_total": 16,
+   "verdicts": {
+    "rect": "PERSISTS",
+    "hann": "PERSISTS",
+    "hamming": "PERSISTS",
+    "dpss": "PERSISTS"
+   },
+   "finished": "2026-09-28T02:31:07+1000",
+   "seconds": 15.9
+  },
+  "2": {
+   "started": "2026-09-28T02:37:17+1000",
+   "module": "s2_phase",
+   "status": "done",
+   "scans_done": 85,
+   "scans_total": 85,
+   "classification": "INCONCLUSIVE",
+   "finished": "2026-09-28T02:37:19+1000",
+   "seconds": 1.8
+  },
+  "3": {
+   "started": "2026-09-28T03:41:37+1000",
+   "module": "s3_bwidth",
+   "status": "3B_done",
+   "scans_done": 11,
+   "scans_total": 11,
+   "diagnostic_radius": 0.5,
+   "finished": "2026-09-28T05:29:39+1000",
+   "seconds": 6481.5,
+   "verdict_3B": "NO_EXPLICIT_B_INTERVAL_CERTIFIED"
+  },
+  "6": {
+   "started": "2026-09-28T02:43:26+1000",
+   "module": "s6_noise",
+   "status": "done",
+   "blocks_done": 780,
+   "error": "ValueError(\"'yerr' must not contain negative values\")",
+   "hypotheses": {
+    "H1": true,
+    "H2": true,
+    "H3": true,
+    "TSP_consequence": true
+   },
+   "finished": "2026-09-28T02:43:29+1000",
+   "seconds": 2.9
+  },
+  "4": {
+   "started": "2026-09-28T02:42:12+1000",
+   "module": "s4_imbalance",
+   "status": "done",
+   "scans_done": 9,
+   "scans_total": 9,
+   "classification": "PERSISTS_OVER_TESTED_IMBALANCE",
+   "finished": "2026-09-28T02:42:19+1000",
+   "seconds": 7.1
+  },
+  "5": {
+   "started": "2026-09-28T02:42:19+1000",
+   "module": "s5_matching",
+   "status": "done",
+   "scans_done": 10,
+   "scans_total": 10,
+   "finished": "2026-09-28T02:42:33+1000",
+   "seconds": 14.1
+  },
+  "7": {
+   "started": "2026-09-28T03:30:03+1000",
+   "module": "s7_numinv",
+   "status": "done",
+   "scans_done": 45,
+   "scans_total": 45,
+   "any_classification_change": false,
+   "finished": "2026-09-28T03:30:23+1000",
+   "seconds": 19.9
+  },
+  "8": {
+   "started": "2026-09-28T03:44:25+1000",
+   "module": "s8_real",
+   "status": "done",
+   "finished": "2026-09-28T03:50:55+1000",
+   "seconds": 389.8
+  }
+ },
+ "events": [
+  "2026-09-28T02:30:46+1000 runner start stages=0,1",
+  "2026-09-28T02:31:07+1000 runner end",
+  "2026-09-28T02:33:31+1000 runner start stages=2",
+  "2026-09-28T02:35:09+1000 runner end",
+  "2026-09-28T02:37:17+1000 runner start stages=2",
+  "2026-09-28T02:37:19+1000 runner end",
+  "2026-09-28T02:37:42+1000 runner start stages=3,6,4,5",
+  "2026-09-28T02:42:12+1000 stage 6 error ValueError(\"'yerr' must not contain negative values\")",
+  "2026-09-28T02:42:33+1000 runner end",
+  "2026-09-28T02:43:26+1000 runner start stages=6",
+  "2026-09-28T02:43:29+1000 runner end",
+  "2026-09-28T03:23:12+1000 runner start stages=7",
+  "2026-09-28T03:24:39+1000 runner end",
+  "2026-09-28T03:30:03+1000 runner start stages=7",
+  "2026-09-28T03:30:23+1000 runner end",
+  "2026-09-28T03:41:37+1000 runner start stages=3",
+  "2026-09-28T03:44:25+1000 runner start stages=8",
+  "2026-09-28T03:50:55+1000 runner end",
+  "2026-09-28T05:29:39+1000 runner end",
+  "2026-09-28T05:30:44+1000 3B abandoned second-wave workers (pid 10484 tree) terminated at 05:30 after DONE_3B.json was written; their results were unrecoverable by design (primary deadline passed)"
+ ],
+ "last_update": "2026-09-28T05:30:44+1000",
+ "prereg_sha256": "013f43fe3eae10f36b421698d6c4449fa57ac8e3637a066bc7b777cb04d45c9a",
+ "freeze_sha256": "fe359b352c5f7904e859b9e1b2f46009fbec4598c3b9ad16daf42d9c3b1d0649",
+ "runner_started": "2026-09-28T03:44:25+1000",
+ "runner_pid": 92940,
+ "code_sha256": {
+  "advcore.py": "6c71a72c3418ac8028a4003fb7a39454d883adc87b442d786e99937149b23f83",
+  "advcross.py": "970ea663ae3d94a5a92be588d822f339b49148561f84edf2490f23ebb0a053b3",
+  "advrun.py": "2660673a13aefc40addc7fb597c1d2a1067aa7a4b65261877f54a86c23dbff46",
+  "advtangent.py": "71e03a3412e58ce6ef149b6c4893e0d7050bb86ceb9fd6f6c720bcbb40bc6c35",
+  "bcert_arb.py": "a26e88608e1f7e14d4bc84f42f528c0637ef93d222c224b50393b494965f0acd",
+  "bcert_block.py": "9cf78ee5a55c6c0b25f82f7bf6d9e2e5b308e9c7e6032535a534b03b95dc1ec6",
+  "bcert_primary.py": "efea3ca93b65e34baa79e48b9e586e497e76bddf5e1e5497b56328feb8211a66",
+  "run_all.py": "c7d79382c5f4b44d4f54d9b6272f0f8213d4ab57a06f4b907fb2f65f1189dafe",
+  "s0_baseline.py": "675ba96e45bcc2ef21568a385c3705a6e219f3f52a7e1105bfd3f166e3691f72",
+  "s1_window.py": "0baff96dbbb16d39dc4e8385a78a3765565702717f45d13fde00d44464b14c9f",
+  "s2_phase.py": "4bc998c6074eeeca2f4b6bbbf1a2ff89b0fdea235f9f820e6f620582bbb188fe",
+  "s3_bwidth.py": "3d75b8905d861ca7818059eae3749ca8da3448ea1411c9595065de4f9262c908",
+  "s3b_bcert.py": "e9cf2a4330682ebfe6a747853eba3c6239b950ab81968622510ab53706304845",
+  "s4_imbalance.py": "49ceeaeed8e9b93e95a5dca81261a4ca0ac8a1d79095e5c88957dcaf9795999b",
+  "s5_matching.py": "244810f715a997c8c87fd37af6b746d596026fa9460430fbda5cbaebae614b17",
+  "s6_noise.py": "fca7abdd0d63a8aadc77d723c72a7b038d5b91eb8a5cf396468ad2e861a35303",
+  "s7_numinv.py": "88a56fb7ae314ac61438b6e9f49b02971300b18248650690a9e0bf1be119bcbf",
+  "s8_real.py": "6a075ad4cacfa5297e73841ea719ba75334953fba3d8b2438c8c704406a77146"
+ },
+ "final": {
+  "completed": "2026-09-28T05:30:47+1000",
+  "overall_status": "NEEDS ONE FOCUSED VALIDATION PASS",
+  "stage3B": "NO_EXPLICIT_B_INTERVAL_CERTIFIED"
+ }
+}

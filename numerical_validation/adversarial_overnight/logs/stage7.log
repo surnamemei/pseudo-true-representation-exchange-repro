@@ -1,0 +1,8 @@
+[03:23:12][S7] === stage 7 (s7_numinv) start
+[03:23:13][S7] S7 variants: 45 configs x 101 points = 4545 GS(P) tasks
+[03:24:08][S7] boundary rule: extending 9 configs to [hi, 3hi]
+[03:24:39][S7] Stage 7 any classification change: False
+[03:24:39][S7] === stage 7 done in 87.4 s
+[03:30:03][S7] === stage 7 (s7_numinv) start
+[03:30:23][S7] Stage 7 any classification change: False
+[03:30:23][S7] === stage 7 done in 19.9 s

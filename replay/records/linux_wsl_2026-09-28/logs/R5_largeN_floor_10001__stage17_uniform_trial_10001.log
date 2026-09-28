@@ -1,0 +1,70 @@
+local True True
+checked 5000 failures 0
+checked 10000 failures 1
+checked 15000 failures 1
+checked 20000 failures 1
+checked 25000 failures 3
+{
+  "N0_interval_trial": 10001,
+  "t_range": [
+    "0",
+    "0.00000000999800029996000499940006999200089990001099880012998600149984001700193625155"
+  ],
+  "uniform_kernel_remainder_enclosure": "1e-45 for derivatives through order 46 on |q|<=110; near-zero deflation 1e-25",
+  "predicate_counts": {
+    "cost_excluded": 25274,
+    "gradient_excluded": 1420,
+    "monotone_derivative_no_root": 1012,
+    "unique_root_B_min": 1,
+    "unique_root_A_min": 1
+  },
+  "failed_total": 4,
+  "first_failures": [
+    {
+      "index": 6824,
+      "cell": [
+        -1.0250244140625,
+        -1.024993896484375
+      ],
+      "predicate": "cost_excluded"
+    },
+    {
+      "index": 23687,
+      "cell": [
+        -3.3955078125,
+        -3.39501953125
+      ],
+      "predicate": "cost_excluded"
+    },
+    {
+      "index": 24712,
+      "cell": [
+        -3.645751953125,
+        -3.6455078125
+      ],
+      "predicate": "cost_excluded"
+    },
+    {
+      "index": 25687,
+      "cell": [
+        -3.8837890625,
+        -3.883544921875
+      ],
+      "predicate": "gradient_excluded"
+    }
+  ],
+  "minimum_predicate_margins": {
+    "cost_excluded": "-0.0000000244319258923835640293915218621725456077112055569273465624826756610337226503",
+    "gradient_excluded": "-0.00000000252131718353960450634499377164685531857542646973795312235444985481479956393",
+    "monotone_derivative_no_root": "0.0000000137485646819107362276462976945538792275408309986481170246065619423172721019",
+    "unique_root_B_min": "0.000101183865279744198222806588146894918056407272412085006069626040791070413913",
+    "unique_root_A_min": "0.0000250644584366013606311231840089893233791419870110841376222399819270009797219"
+  },
+  "trial_cost_upper": "0.00288788330596310365696057378225395363509641612470089058573999041378466460865",
+  "coalescent_margin_lower": "0.000851154211698329512234936557652298411906862896024602368054401064301488701695",
+  "tail_margin_lower": "0.00313564906296718819640160710087057348092989578636645831525306873534138846429",
+  "root_boxes_linked": true,
+  "verified": false,
+  "kernel_majorant": "4.84575365551109081450284043085928255404434486253190584085281299015174574397e-46",
+  "kernel_error_enclosure_power": -45
+}

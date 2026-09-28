@@ -1,0 +1,211 @@
+{
+ "R1_arb_finite_z": {
+  "read": [
+   "N31_global_certificate.json",
+   "N31_inner_interval_cells.csv",
+   "N31_interval_cells.csv",
+   "interval_boxes.csv",
+   "stage12_arb_backend.py",
+   "stage12_cover_audit.py",
+   "stage12_full_arb_replay.py",
+   "stage12_replay/N21_refinement_leaves.csv",
+   "stage12_replay/N31_refinement_leaves.csv",
+   "stage2_cell_audit.json",
+   "stage2_inner_cells.csv",
+   "stage2_reference.json",
+   "validated_globality_certificate.json"
+  ],
+  "write": [
+   "stage12_replay/N21_predicates.csv",
+   "stage12_replay/N21_refinement_leaves.csv",
+   "stage12_replay/N21_summary.json",
+   "stage12_replay/N31_predicates.csv",
+   "stage12_replay/N31_refinement_leaves.csv",
+   "stage12_replay/N31_summary.json",
+   "stage12_replay/coverage_audit.json",
+   "stage12_replay/refinement_coverage_audit.json"
+  ],
+  "modules": [
+   "stage12_arb_backend.py"
+  ]
+ },
+ "R2_generalN": {
+  "read": [
+   "stage12_generalN.py",
+   "three_to_two_tone_stage2_interval.py",
+   "three_to_two_tone_stage3_tangent.py",
+   "three_to_two_tone_stage3_tangent_interval.py"
+  ],
+  "write": [
+   "stage12_generalN/N11_certificate.json",
+   "stage12_generalN/N11_partition.csv",
+   "stage12_generalN/N11_reference.json",
+   "stage12_generalN/N11_roots.csv",
+   "stage12_generalN/N15_certificate.json",
+   "stage12_generalN/N15_partition.csv",
+   "stage12_generalN/N15_reference.json",
+   "stage12_generalN/N15_roots.csv",
+   "stage12_generalN/N21_certificate.json",
+   "stage12_generalN/N21_partition.csv",
+   "stage12_generalN/N21_reference.json",
+   "stage12_generalN/N21_roots.csv",
+   "stage12_generalN/N31_certificate.json",
+   "stage12_generalN/N31_partition.csv",
+   "stage12_generalN/N31_reference.json",
+   "stage12_generalN/N31_roots.csv",
+   "stage12_generalN/N41_certificate.json",
+   "stage12_generalN/N41_partition.csv",
+   "stage12_generalN/N41_reference.json",
+   "stage12_generalN/N41_roots.csv"
+  ],
+  "modules": [
+   "three_to_two_tone_stage2_interval.py",
+   "three_to_two_tone_stage3_tangent.py"
+  ]
+ },
+ "R3_continuum": {
+  "read": [
+   "continuum_global_certificate.json",
+   "stage14_continuum.py",
+   "stage14_continuum_candidate.json",
+   "stage14_continuum_endpoint_interval.py",
+   "stage14_continuum_global_hybrid.py",
+   "stage14_continuum_global_interval.py",
+   "stage14_continuum_global_partition.csv",
+   "stage14_continuum_global_roots.csv",
+   "stage14_continuum_interval.py",
+   "stage14_continuum_local_interval.json",
+   "stage14_replay_global.py",
+   "three_to_two_tone_stage2_interval.py"
+  ],
+  "write": [
+   "continuum_global_certificate.json",
+   "stage14_continuum_candidate.json",
+   "stage14_continuum_candidate_roots.csv",
+   "stage14_continuum_endpoint_interval.json",
+   "stage14_continuum_global_partition.csv",
+   "stage14_continuum_global_replay.json",
+   "stage14_continuum_global_roots.csv",
+   "stage14_continuum_local_interval.json"
+  ],
+  "modules": [
+   "stage14_continuum_global_interval.py",
+   "three_to_two_tone_stage2_interval.py"
+  ]
+ },
+ "R4_independent_arb_N0": {
+  "read": [
+   "stage14_continuum_candidate.json",
+   "stage14_continuum_global_partition.csv",
+   "stage16_independent_arb.py"
+  ],
+  "write": [
+   "independent_N0_replay.csv",
+   "independent_N0_replay.json"
+  ],
+  "modules": []
+ },
+ "R5_largeN_floor_10001": {
+  "read": [
+   "explicit_N0_certificate.json",
+   "largeN_condition_thresholds.csv",
+   "stage14_continuum_candidate.json",
+   "stage14_continuum_global_interval.py",
+   "stage14_continuum_global_partition.csv",
+   "stage14_continuum_local_interval.json",
+   "stage17_annotate_condition_thresholds.py",
+   "stage17_interval_trial_N10001.json",
+   "stage17_kernel_bound.py",
+   "stage17_largeN_margin_summary.py",
+   "stage17_largeN_margins.json",
+   "stage17_refine_uniform.py",
+   "stage17_refinement_N10001.json",
+   "stage17_uniform_trial.py",
+   "stage17_write_largeN.py",
+   "three_to_two_tone_stage2_interval.py"
+  ],
+  "write": [
+   "largeN_condition_thresholds.csv",
+   "stage17_interval_trial_N10001.json",
+   "stage17_largeN_margins.json",
+   "stage17_refinement_N10001.json",
+   "tightened_N0_certificate.json"
+  ],
+  "modules": [
+   "stage14_continuum_global_interval.py",
+   "stage17_kernel_bound.py",
+   "stage17_uniform_trial.py",
+   "three_to_two_tone_stage2_interval.py"
+  ]
+ },
+ "R6_finite_width_eps_0p035": {
+  "read": [
+   "interval_boxes.csv",
+   "stage17_epsilon_coeff_crosscheck.py",
+   "stage17_epsilon_coverage_audit.py",
+   "stage17_epsilon_coverage_audit_0p035.json",
+   "stage17_epsilon_inner_tiled.py",
+   "stage17_epsilon_inner_tiled_0p035.json",
+   "stage17_epsilon_joints.py",
+   "stage17_epsilon_joints_0p035.json",
+   "stage17_epsilon_outer_refinement_0p035_14287.json",
+   "stage17_epsilon_quadratic_trial.py",
+   "stage17_epsilon_refine.py",
+   "stage17_epsilon_root_tiling.py",
+   "stage17_epsilon_root_tiling_0p035.json",
+   "stage17_parametric_jet.py",
+   "stage17_write_epsilon_certificate.py",
+   "stage2_crossing_global.json",
+   "stage2_crossing_interval.json",
+   "stage2_inner_cells.csv",
+   "stage2_local_interval_checks.json",
+   "stage2_reference.json",
+   "stage3_tangent_reference.json",
+   "stage7_n31_certificate.py",
+   "three_to_two_tone_branch_study.py",
+   "three_to_two_tone_explore.py",
+   "three_to_two_tone_stage1_global.py",
+   "three_to_two_tone_stage2_inner_global.py",
+   "three_to_two_tone_stage2_interval.py",
+   "three_to_two_tone_stage2_outer_global.py",
+   "three_to_two_tone_stage3_full_crossings.py"
+  ],
+  "write": [
+   "epsilon_interval_obligations_0p035.csv",
+   "finite_width_epsilon_certificate_0p035.json",
+   "finite_width_epsilon_certificate_0p035.md",
+   "stage17_epsilon_coeff_crosscheck.json",
+   "stage17_epsilon_coverage_audit_0p035.json",
+   "stage17_epsilon_inner_tiled_0p035.json",
+   "stage17_epsilon_joints_0p035.json",
+   "stage17_epsilon_outer_refinement_0p035_14287.json",
+   "stage17_epsilon_quadratic_trial.json",
+   "stage17_epsilon_root_tiling_0p035.json"
+  ],
+  "modules": [
+   "stage17_epsilon_quadratic_trial.py",
+   "stage17_parametric_jet.py",
+   "stage7_n31_certificate.py",
+   "three_to_two_tone_branch_study.py",
+   "three_to_two_tone_explore.py",
+   "three_to_two_tone_stage1_global.py",
+   "three_to_two_tone_stage2_inner_global.py",
+   "three_to_two_tone_stage2_interval.py",
+   "three_to_two_tone_stage2_outer_global.py",
+   "three_to_two_tone_stage3_full_crossings.py"
+  ]
+ },
+ "R7_lower_transition": {
+  "read": [
+   "stage13_build.py"
+  ],
+  "write": [
+   "lower_transition_certificate.json",
+   "paper/figures/fig_stage13_global_cost.pdf",
+   "smallz_global_cost_figure.pdf",
+   "smallz_global_regimes.csv",
+   "tangent_cost_vs_lambda.csv"
+  ],
+  "modules": []
+ }
+}

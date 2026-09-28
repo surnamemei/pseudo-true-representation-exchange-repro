@@ -1,0 +1,67 @@
+{
+  "model": "N=21,b=10,phi=pi; p=z^2",
+  "verdict": "TSP-READY-WITH-DISCONNECTED-RESULTS",
+  "bridge_from_tangent_to_p4_certified": false,
+  "small_p_global_interval": "exists 0<p<p0 with p0>0 and a tangent limit at p=0, but p0 is not explicit; no certified overlap with a finite-p slab",
+  "largest_explicit_connected_global_interval_p": [
+    "3.99999880000009",
+    "4"
+  ],
+  "other_certified_isolated_p": [
+    1,
+    2.25
+  ],
+  "archived_global_interval_z": [
+    "1.9999997",
+    "2.0"
+  ],
+  "local_crossing_interval_z": [
+    "1.9999",
+    "2"
+  ],
+  "numerical_continuation": {
+    "rows": 44,
+    "p_sampled": [
+      "1.0e-6",
+      "4.0"
+    ],
+    "no_fallbacks": true,
+    "sampled_minima": {
+      "A_hessian_min": "2.751271563351295856163480330170512E-15",
+      "B_hessian_min": "1.970332954649940754172138556618147E-14",
+      "A_gram_determinant": "362.50467487753915292209677640386735",
+      "B_gram_determinant": "440.97180469525937309501932817445813",
+      "A_within_fit_separation": "4.1534408488382739298308015465722124",
+      "B_within_fit_separation": "12.46809485613987407790856124408772",
+      "AB_frequency_pair_distance": "12.761165727050447687728671721081777",
+      "slope_dJ_depsilon": "0.0000022286881960094731449708246613193014"
+    },
+    "status": "numerical_only"
+  },
+  "bounded_subdivision_repair": {
+    "local_certified_pilot_widths_z": {
+      "0.1": "0.000000001",
+      "0.5": "0.0000001",
+      "1.0": "0.000001",
+      "1.5": "0.00001",
+      "1.9": "0.00001"
+    },
+    "full_domain_global_exclusion_attempted_on_new_slabs": false,
+    "conclusion": "raw ordinary-coordinate interval dependency requires impractically narrow slabs near p=0; no connected global cover obtained"
+  },
+  "obstruction": "interval dependency and computational cost; no sampled structural event, but absence of such an event is not certified over the gap",
+  "overlap_maps": {
+    "chart_S_to_F": "u_A1=v_A; u_A2=p*kappa_A; u_B1=p*kappa_B; u_B2=v_B; epsilon=p*lambda, p>0",
+    "inverse": "v_A=u_A1; kappa_A=u_A2/p; kappa_B=u_B1/p; v_B=u_B2; lambda=epsilon/p, p>0",
+    "consistency": "algebraic identity on p>0; no Stage-18 interval chart-overlap certificate near p=0"
+  },
+  "source_sha256": {
+    "p_bridge_numerical.csv": "b270d6d11025ec4d4bd6ddba89bd1f68310942ec15a651c326aa534e1561d191",
+    "stage18_local_slab_pilot.csv": "243d618cca15b5d8b25ea2c63deca2bdd6683c215ef77ca15f3b03648e1d589e",
+    "p_bridge_slabs.csv": "c38ee2f42985de7a3effef7f42ddd31d1d4c15b248226624369735b77900c11d",
+    "p_bridge_competitor_margins.csv": "607477062539bb773406825f05915b46c2f9749243ae73debd0fb7ba2e4e455b",
+    "stage4_certificate.json": "590ad5b6021b5be2135602a40b77c18e5f7c90e260b6ac2d0ce4704986344afc",
+    "stage4_global_interval_result.json": "8a49e70eb599797a83cfbdc5b78fe4fa54b9f9447f43bb3f6b09d12ccc29c863",
+    "stage4_interval_boxes.json": "31de0f60c85bbe1f62a9efd921d9943bc8f8fdcb219ea4c35f16e9f928d492cf"
+  }
+}

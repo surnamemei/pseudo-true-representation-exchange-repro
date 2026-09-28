@@ -1,0 +1,10 @@
+{
+  "epsilon_interval": [
+    "0.2456906301722773982036098513551920308807846909441829969680288159373386741871575",
+    "0.2506906301722773982036098513551920308807846909441829969680288159373386741871575"
+  ],
+  "tested": 0,
+  "failures": 0,
+  "first_failures": []
+}
+{'outer_center_value_pairs': 33, 'parametric_jet_pairs': 12, 'all_interval_formulas_overlap': True}

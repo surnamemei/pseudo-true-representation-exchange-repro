@@ -1,0 +1,41 @@
+{
+  "poisoned_quartic_changed_fields": [
+    "epsilon_leading",
+    "epsilon_through_quartic",
+    "remainder",
+    "remainder_over_d4",
+    "relative_error",
+    "remainder_after_quartic",
+    "remainder_after_quartic_over_d6",
+    "relative_error_quartic"
+  ],
+  "invariant_root_fields": [
+    "epsilon_cross",
+    "u_A1",
+    "u_A2",
+    "u_B1",
+    "u_B2",
+    "J_A",
+    "J_B",
+    "Rscaled_A",
+    "Rscaled_B"
+  ],
+  "root_fields_exactly_equal": true,
+  "poisoned_inner_defaults": [
+    {
+      "branch": "A",
+      "complete": true,
+      "visited": 1371,
+      "remaining": 0
+    },
+    {
+      "branch": "B",
+      "complete": true,
+      "visited": 277,
+      "remaining": 0
+    }
+  ],
+  "inner_rows_identical": true,
+  "inner_row_count": 825,
+  "frozen_sha256": "e4e32dc3595bcaf18ee48df8c95152187c3944d6a61e6980b6efcc3c87d57caf"
+}

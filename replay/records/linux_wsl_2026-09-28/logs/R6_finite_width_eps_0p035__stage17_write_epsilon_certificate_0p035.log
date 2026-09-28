@@ -1,0 +1,55 @@
+{
+  "N": 21,
+  "z": 2,
+  "b": 10,
+  "phase": "pi",
+  "working_radius": "0.035",
+  "final_closed_epsilon_interval": [
+    "0.213190630172278",
+    "0.283190630172277"
+  ],
+  "certified_width": "0.069999999999999",
+  "crossing_bracket": [
+    "0.248190630172276398203609851355192030880784690944182996968028815937338674187157503204696782418560809227031",
+    "0.248190630172278398203609851355192030880784690944182996968028815937338674187157503204696782418560809227031"
+  ],
+  "outer": {
+    "archived_parents": 14287,
+    "refined_parents": 3738,
+    "terminal_leaves": 19054,
+    "unresolved": 0
+  },
+  "inner": {
+    "archived_parents": 819,
+    "visited_nodes": 1970591,
+    "terminal_leaves": 985705,
+    "unresolved": 0,
+    "max_spatial_depth": 15,
+    "predicate_counts": {
+      "inside_Krawczyk_box": 7031,
+      "objective_excluded": 478689,
+      "gradient_excluded": 299994,
+      "krawczyk_excluded": 199991
+    }
+  },
+  "roots": {
+    "epsilon_slabs": 4096,
+    "branch_krawczyk_checks": 8192,
+    "all_pass": true,
+    "minimum_slope_lower": "[6.844978998913281307954630329921945634428379607131063760326912640874357433557248932669, 6.844978998913281307954630329921945634428379607131063760326912640874357433557248932669]",
+    "shared_boundary_checks": 8190,
+    "minimum_shared_box_containment": "0.00021916121623834355922505380441099245459910452010018916196427034867044597178427145199428",
+    "minimum_gram_determinant_lower": "420.905566278716136759128269881946991525489961687052239434468378743687554528506754759283941"
+  },
+  "cost_difference_endpoint_signs": [
+    "negative",
+    "positive"
+  ],
+  "unique_transverse_crossing": true,
+  "A_uniquely_global_below_crossing": true,
+  "B_uniquely_global_above_crossing": true,
+  "exactly_A_and_B_global_at_crossing": true,
+  "no_competitive_third_or_coalescent_fit": true,
+  "full_global_interval_certified": true,
+  "scope": "one N=21,z=2 interval only; no connected bridge to small-z theorem"
+}

@@ -1,0 +1,5 @@
+lambda_range,observed_best,proof_status,notes
+0,coalescent endpoint,exact at tangent level,A emerges from this endpoint
+"(0, lambda_AB)",near-zero regular branch connects numerically to A,numerical over plotted interval; independently certified locally near lambda_AB and lambda=0,no positive coalescent global regime
+lambda_AB,A=B,interval certified by Stage 11/12,transverse separated minima
+"(lambda_AB, 0.2]",regular B,numerical over plotted interval; certified locally near lambda_AB,no statement beyond 0.2

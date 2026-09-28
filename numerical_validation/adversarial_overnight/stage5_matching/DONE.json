@@ -1,0 +1,265 @@
+{
+ "rows": [
+  {
+   "convention": "A",
+   "N": 11,
+   "z": 2.0,
+   "b": 10.0,
+   "Delta_phys": 0.18181818181818182,
+   "omega3_phys": 0.9090909090909091,
+   "pair_separation_bins": 0.6366197723675814,
+   "verdict": "present",
+   "extended": false,
+   "n_exchanges": 1,
+   "eps_c": 0.2434736906079546,
+   "J_star": 0.39121250953644005,
+   "third_margin": 0.4282777112752578,
+   "third_margin_rel": 1.0947444185328774,
+   "A": [
+    -4.982240337729728,
+    0.5633619343706542
+   ],
+   "B": [
+    -0.05923749776851395,
+    12.5829462930621
+   ],
+   "status": "present",
+   "approaches_coalescence": false
+  },
+  {
+   "convention": "A",
+   "N": 21,
+   "z": 2.0,
+   "b": 10.0,
+   "Delta_phys": 0.09523809523809523,
+   "omega3_phys": 0.47619047619047616,
+   "pair_separation_bins": 0.6366197723675814,
+   "verdict": "present",
+   "extended": false,
+   "n_exchanges": 1,
+   "eps_c": 0.2481906301722768,
+   "J_star": 0.8118078719175417,
+   "third_margin": 0.8829599621497968,
+   "third_margin_rel": 1.0876464649993962,
+   "A": [
+    -4.772447353918864,
+    0.6051703202767982
+   ],
+   "B": [
+    -0.057653561926684915,
+    12.463419356801552
+   ],
+   "status": "present",
+   "approaches_coalescence": false
+  },
+  {
+   "convention": "A",
+   "N": 31,
+   "z": 2.0,
+   "b": 10.0,
+   "Delta_phys": 0.06451612903225806,
+   "omega3_phys": 0.3225806451612903,
+   "pair_separation_bins": 0.6366197723675814,
+   "verdict": "present",
+   "extended": false,
+   "n_exchanges": 1,
+   "eps_c": 0.2491430898524996,
+   "J_star": 1.2178572211712346,
+   "third_margin": 1.3226055495293796,
+   "third_margin_rel": 1.08601035206525,
+   "A": [
+    -4.732308155500405,
+    0.6135741125336693
+   ],
+   "B": [
+    -0.057313779596370296,
+    12.440325828105301
+   ],
+   "status": "present",
+   "approaches_coalescence": false
+  },
+  {
+   "convention": "A",
+   "N": 41,
+   "z": 2.0,
+   "b": 10.0,
+   "Delta_phys": 0.04878048780487805,
+   "omega3_phys": 0.24390243902439024,
+   "pair_separation_bins": 0.6366197723675814,
+   "verdict": "present",
+   "extended": false,
+   "n_exchanges": 1,
+   "eps_c": 0.24948805424141623,
+   "J_star": 1.620055524505526,
+   "third_margin": 1.758421978930306,
+   "third_margin_rel": 1.0854084642975508,
+   "A": [
+    -4.717946639393091,
+    0.6166144750920637
+   ],
+   "B": [
+    -0.05718930348112394,
+    12.432043758898573
+   ],
+   "status": "present",
+   "approaches_coalescence": false
+  },
+  {
+   "convention": "A",
+   "N": 61,
+   "z": 2.0,
+   "b": 10.0,
+   "Delta_phys": 0.03278688524590164,
+   "omega3_phys": 0.16393442622950818,
+   "pair_separation_bins": 0.6366197723675814,
+   "verdict": "present",
+   "extended": false,
+   "n_exchanges": 1,
+   "eps_c": 0.24974014359577318,
+   "J_star": 2.4204889516504764,
+   "third_margin": 2.626148202111189,
+   "third_margin_rel": 1.0849659942965153,
+   "A": [
+    -4.707510271707719,
+    0.6188351372662453
+   ],
+   "B": [
+    -0.057097883988916465,
+    12.426018701599588
+   ],
+   "status": "present",
+   "approaches_coalescence": false
+  },
+  {
+   "convention": "B",
+   "N": 11,
+   "z": 1.0476190476190474,
+   "b": 5.238095238095238,
+   "Delta_phys": 0.09523809523809522,
+   "omega3_phys": 0.4761904761904762,
+   "pair_separation_bins": 0.3334674998115902,
+   "verdict": "present",
+   "extended": false,
+   "n_exchanges": 1,
+   "eps_c": 0.10790412716929765,
+   "J_star": 0.007047307520592128,
+   "third_margin": 0.004956256320346242,
+   "third_margin_rel": 0.7032836733552686,
+   "A": [
+    -7.366051375432072,
+    -0.12239088111251561
+   ],
+   "B": [
+    -0.15432385542181493,
+    10.894762224382823
+   ],
+   "status": "present",
+   "approaches_coalescence": false
+  },
+  {
+   "convention": "B",
+   "N": 21,
+   "z": 2.0,
+   "b": 10.0,
+   "Delta_phys": 0.09523809523809523,
+   "omega3_phys": 0.47619047619047616,
+   "pair_separation_bins": 0.6366197723675814,
+   "verdict": "present",
+   "extended": false,
+   "n_exchanges": 1,
+   "eps_c": 0.24819063017227871,
+   "J_star": 0.8118078719175275,
+   "third_margin": 0.8829599621498181,
+   "third_margin_rel": 1.0876464649994415,
+   "A": [
+    -4.772447353918892,
+    0.6051703202767982
+   ],
+   "B": [
+    -0.057653561926684915,
+    12.463419356801552
+   ],
+   "status": "present",
+   "approaches_coalescence": false
+  },
+  {
+   "convention": "B",
+   "N": 31,
+   "z": 2.952380952380952,
+   "b": 14.761904761904761,
+   "Delta_phys": 0.09523809523809523,
+   "omega3_phys": 0.47619047619047616,
+   "pair_separation_bins": 0.9397720449235724,
+   "verdict": "present",
+   "extended": false,
+   "n_exchanges": 1,
+   "eps_c": 0.5582330267801113,
+   "J_star": 8.641289429560919,
+   "third_margin": 14.667995345048807,
+   "third_margin_rel": 1.6974313225606328,
+   "A": [
+    -3.0819048814267234,
+    3.5150431725217146
+   ],
+   "B": [
+    -0.06726464573938529,
+    14.710938723015971
+   ],
+   "status": "present",
+   "approaches_coalescence": false
+  },
+  {
+   "convention": "B",
+   "N": 41,
+   "z": 3.9047619047619047,
+   "b": 19.523809523809522,
+   "Delta_phys": 0.09523809523809523,
+   "omega3_phys": 0.47619047619047616,
+   "pair_separation_bins": 1.2429243174795637,
+   "verdict": "present",
+   "extended": false,
+   "n_exchanges": 1,
+   "eps_c": 0.8408611608525819,
+   "J_star": 26.344453963741845,
+   "third_margin": 23.019602596213,
+   "third_margin_rel": 0.873793118957604,
+   "A": [
+    -2.504831377438677,
+    5.52980143823163
+   ],
+   "B": [
+    0.12039176068492452,
+    18.005801632514533
+   ],
+   "status": "present",
+   "approaches_coalescence": false
+  },
+  {
+   "convention": "B",
+   "N": 61,
+   "z": 5.809523809523809,
+   "b": 29.047619047619047,
+   "Delta_phys": 0.09523809523809523,
+   "omega3_phys": 0.47619047619047616,
+   "pair_separation_bins": 1.8492288625915458,
+   "verdict": "inconclusive",
+   "extended": false,
+   "n_exchanges": 1,
+   "eps_c": 0.9597182359869462,
+   "J_star": 55.21460096663834,
+   "third_margin": 0.07132334892848746,
+   "third_margin_rel": 0.0012917479739024522,
+   "A": [
+    -5.660954231664078,
+    6.052574772623842
+   ],
+   "B": [
+    -6.780820630444282,
+    28.877350667415953
+   ],
+   "status": "inconclusive",
+   "approaches_coalescence": false
+  }
+ ],
+ "evidence_level": "GLOBAL_NUMERICAL"
+}

@@ -1,0 +1,51 @@
+{
+ "candidates": [
+  {
+   "interval": [
+    "9.75",
+    "10.25"
+   ],
+   "blocks": 50,
+   "status_primary": "failed"
+  },
+  {
+   "interval": [
+    "9.90",
+    "10.10"
+   ],
+   "blocks": 20,
+   "status_primary": "failed"
+  },
+  {
+   "interval": [
+    "9.95",
+    "10.05"
+   ],
+   "blocks": 10,
+   "status_primary": "failed"
+  },
+  {
+   "interval": [
+    "9.98",
+    "10.02"
+   ],
+   "blocks": 4,
+   "status_primary": "failed"
+  },
+  {
+   "interval": [
+    "9.99",
+    "10.01"
+   ],
+   "blocks": 2,
+   "status_primary": "failed"
+  }
+ ],
+ "widest_primary": null,
+ "final_certified": null,
+ "verdict": "NO_EXPLICIT_B_INTERVAL_CERTIFIED",
+ "blocks_attempted": 24,
+ "blocks_ok": 0,
+ "runtime_minutes": 108.01708146731059,
+ "cap_minutes": 150.0
+}

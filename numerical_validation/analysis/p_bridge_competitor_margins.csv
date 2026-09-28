@@ -1,0 +1,11 @@
+p,z,third_candidate_cost,third_candidate_margin,confluent_margin,status,source
+0.04,0.2,0.00019684366313938546,0.00010296054156535215,0.00012582118303934152,numerical_search_only,globality_margins.csv
+0.0625,0.25,0.0004801692176841552,0.0002511504268502082,,numerical_search_only,stage4_bridge_third_branch_probe.csv
+0.25,0.5,0.007628753211218624,0.003989438220814889,0.004874009016295171,numerical_search_only,globality_margins.csv
+0.5625,0.75,0.0381692508896357,0.019954286235722533,,numerical_search_only,stage4_bridge_third_branch_probe.csv
+1.00,1.0,0.11866255231802705,0.06200783053949012,0.07568790992458214,numerical_search_only,globality_margins.csv
+1.5625,1.25,0.28362255064319886,0.14812550834280053,,numerical_search_only,stage4_bridge_third_branch_probe.csv
+2.25,1.5,0.5730386145104298,0.2990715309404758,0.3644762419120938,numerical_search_only,globality_margins.csv
+3.0625,1.75,1.029453150982461,0.5368405435690665,,numerical_search_only,stage4_bridge_third_branch_probe.csv
+4.00,2.0,1.6947678340673522,0.8829599621498178,1.0735161010630243,numerical_search_only,globality_margins.csv
+"[3.99999880000009,4]","[1.9999997,2]",,,,full_domain_exclusion_margin_not_third_best,stage4_global_interval_result.json

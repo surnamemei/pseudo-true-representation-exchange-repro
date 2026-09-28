@@ -1,0 +1,16 @@
+{
+  "partition_cover_exact_decimal": true,
+  "leaf_count": 27708,
+  "predicate_counts": {
+    "cost_excluded": 25274,
+    "gradient_excluded": 1420,
+    "monotone_derivative_no_root": 1012,
+    "unique_root_B_min": 1,
+    "unique_root_A_min": 1
+  },
+  "failed_count": 0,
+  "first_failures": [],
+  "cost_cell_margin_lower": "0.00000000628142873225679487524733989308435583017778918994828529193386627205941199507",
+  "krawczyk_roots_inside_global_root_boxes": true,
+  "replay_verified": true
+}

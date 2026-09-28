@@ -1,0 +1,74 @@
+[
+  {
+    "label": "below",
+    "total_cells": 12364,
+    "excluded_cells": 12288,
+    "accepted_cells": 76,
+    "inner_box_centers_u": {
+      "near_A": [
+        "-4.455281939392258",
+        "0.6733578195904499"
+      ],
+      "near_B": [
+        "-0.04914750465201223",
+        "12.68667728490621"
+      ]
+    },
+    "accepted_box_min_margin_u": "0.0082367781904809",
+    "excluded_J_min_margin": "0.0000270840290595519368355899082634628657432233616128127536338152571190",
+    "coalescent_h_max": "0.03",
+    "coalescent_separation_u_max": "1.26",
+    "coalescent_intersected_cells": 199,
+    "coalescent_J_min_margin": "0.0178571847481823282514874502545809680962322708705751491360835620944777",
+    "failures": 0,
+    "complete": true
+  },
+  {
+    "label": "crossing",
+    "total_cells": 14377,
+    "excluded_cells": 14287,
+    "accepted_cells": 90,
+    "inner_box_centers_u": {
+      "near_A": [
+        "-4.772447331033973",
+        "0.6051703222238984"
+      ],
+      "near_B": [
+        "-0.05765356138991251",
+        "12.463419411063768"
+      ]
+    },
+    "accepted_box_min_margin_u": "0.00599947621373445",
+    "excluded_J_min_margin": "0.0000058978947609597579973361723980899930680637608781299539090376621925",
+    "coalescent_h_max": "0.03",
+    "coalescent_separation_u_max": "1.26",
+    "coalescent_intersected_cells": 209,
+    "coalescent_J_min_margin": "0.0053767846278513392494144789655618659857264913492234133248663638819422",
+    "failures": 0,
+    "complete": true
+  },
+  {
+    "label": "above",
+    "total_cells": 11012,
+    "excluded_cells": 10961,
+    "accepted_cells": 51,
+    "inner_box_centers_u": {
+      "near_A": [
+        "-5.063369186188758",
+        "0.5515715196448099"
+      ],
+      "near_B": [
+        "-0.0659384508155938",
+        "12.267352421766489"
+      ]
+    },
+    "accepted_box_min_margin_u": "0.00426828185529133",
+    "excluded_J_min_margin": "0.0000086575814806279120421874974695751579784532500831127018258039437871",
+    "coalescent_h_max": "0.03",
+    "coalescent_separation_u_max": "1.26",
+    "coalescent_intersected_cells": 203,
+    "coalescent_J_min_margin": "0.0028048074375096191511466663335048759145955557047678454851538163354516",
+    "failures": 0,
+    "complete": true
+  }
+]

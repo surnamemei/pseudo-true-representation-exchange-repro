@@ -1,0 +1,62 @@
+visited 1000 pending 414
+visited 4000 pending 408
+visited 5000 pending 412
+visited 7000 pending 412
+visited 8000 pending 412
+visited 10000 pending 408
+visited 11000 pending 404
+visited 13000 pending 404
+visited 15000 pending 402
+visited 16000 pending 406
+visited 18000 pending 402
+visited 20000 pending 406
+visited 26000 pending 402
+visited 28000 pending 402
+visited 29000 pending 402
+visited 31000 pending 402
+visited 35000 pending 400
+visited 36000 pending 396
+visited 39000 pending 396
+visited 41000 pending 396
+visited 42000 pending 396
+visited 43000 pending 396
+visited 47000 pending 392
+visited 48000 pending 392
+visited 49000 pending 392
+visited 50000 pending 392
+visited 53000 pending 388
+visited 54000 pending 384
+{
+  "domain": [
+    -100,
+    100
+  ],
+  "lambda_box": [
+    "0.0665069703923955354559163211275837407543809155413175483530555387502921040312",
+    "0.0665069703923955354559163211326715579366311949696010876841769606849027844309"
+  ],
+  "precision_dps": 65,
+  "visited": 54616,
+  "unresolved": [],
+  "retained_stationary_count": 2,
+  "retained_minimum_count": 2,
+  "all_stationary_roots_isolated": false,
+  "other_roots_excluded_by_cost_or_derivative_predicates": true,
+  "root_identities": [
+    "A",
+    "B"
+  ],
+  "global_trial_upper": "0.00288787652883089246888975066028301048332704882758909744602370812443675138409",
+  "other_isolated_root_margin_lower": "+inf",
+  "coalescent_interval": [
+    "0.00373904469618890516371281028368714372854681539293265180292266707369301502828",
+    "0.00373904469618890516371281028531600496960418646479532504708563930688922926001"
+  ],
+  "coalescent_margin_lower": "0.00085116816735801269482305962340413324521976656534355435689895894925626364419",
+  "tail_lower_interval": [
+    "0.00663716576118738061827820476550629169468430729577654635562688705931052359876",
+    "0.00663716576118738061827820476673025932906771983532047727778604240037408907514"
+  ],
+  "tail_margin_lower": "0.00374928923235648814938845410522328121135725846818744890960317893487377221467",
+  "verified_global": true
+}

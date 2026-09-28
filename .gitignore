@@ -1,0 +1,7 @@
+# replay workspace and caches
+_replay_work/
+__pycache__/
+*.pyc
+.venv/
+# large regenerated intermediates must not be committed
+stage17_epsilon_inner_tiled_*.json

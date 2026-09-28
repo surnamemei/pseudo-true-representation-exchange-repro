@@ -1,0 +1,25 @@
+cff-version: 1.2.0
+message: "If you use these certificates, records or code, please cite them as below."
+title: "Certificates and reproducibility code for 'Global Pseudo-True Representation Exchange in Under-Modelled Spectral Fitting'"
+type: software
+authors:
+  - family-names: Mei
+    given-names: Jinghang
+    affiliation: "School of Electrical and Computer Engineering, The University of Sydney"
+    orcid: "https://orcid.org/0009-0007-2901-3285"
+version: "2026.09.28"
+date-released: "2026-09-28"
+repository-code: "https://github.com/surnamemei/pseudo-true-representation-exchange"
+license: MIT
+keywords:
+  - model misspecification
+  - pseudo-true parameter
+  - sinusoidal parameter estimation
+  - nonlinear least squares
+  - interval arithmetic
+  - computer-assisted proof
+abstract: >-
+  Directed-rounding interval certificates (mpmath.iv), an independent Arb/python-flint replay
+  implementation, preregistered numerical validation data and SHA-256 manifests for a study of
+  global pseudo-true representation exchange in fixed-order (under-modelled) least-squares
+  spectral fitting.

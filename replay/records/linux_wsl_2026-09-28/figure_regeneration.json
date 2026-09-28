@@ -1,0 +1,104 @@
+{
+ "note": "Regenerated on Linux from archived results with the frozen script. The two figures that are file copies (S1, S2) are byte-identical. The others differ in the embedded font rendering and PDF metadata (0.8-3.0% of pixels at 100 dpi, confined to glyph edges); plotted data were checked visually to be identical.",
+ "figures": {
+  "paper/figures/fig1_continuation.pdf": {
+   "pdf_byte_identical": false,
+   "raster_100dpi_size": [
+    716,
+    245
+   ],
+   "pixels_differing_over_32_of_255": 1551,
+   "fraction": 0.00884
+  },
+  "paper/figures/fig2_tangent_landscape.pdf": {
+   "pdf_byte_identical": false,
+   "raster_100dpi_size": [
+    716,
+    220
+   ],
+   "pixels_differing_over_32_of_255": 1191,
+   "fraction": 0.00756
+  },
+  "paper/figures/fig3_largeN_fixed_geometry.pdf": {
+   "pdf_byte_identical": false,
+   "raster_100dpi_size": [
+    350,
+    235
+   ],
+   "pixels_differing_over_32_of_255": 2087,
+   "fraction": 0.02537
+  },
+  "paper/figures/fig4_z_law.pdf": {
+   "pdf_byte_identical": false,
+   "raster_100dpi_size": [
+    350,
+    240
+   ],
+   "pixels_differing_over_32_of_255": 1469,
+   "fraction": 0.01749
+  },
+  "paper/figures/fig5_robustness.pdf": {
+   "pdf_byte_identical": false,
+   "raster_100dpi_size": [
+    716,
+    216
+   ],
+   "pixels_differing_over_32_of_255": 1773,
+   "fraction": 0.01146
+  },
+  "paper/figures/fig6_phase_regimes.pdf": {
+   "pdf_byte_identical": false,
+   "raster_100dpi_size": [
+    350,
+    431
+   ],
+   "pixels_differing_over_32_of_255": 2982,
+   "fraction": 0.01977
+  },
+  "paper/figures/fig7_noise_local_global.pdf": {
+   "pdf_byte_identical": false,
+   "raster_100dpi_size": [
+    716,
+    255
+   ],
+   "pixels_differing_over_32_of_255": 3299,
+   "fraction": 0.01807
+  },
+  "supplement/figures/figS1_weak_phase_resolution.pdf": {
+   "pdf_byte_identical": true,
+   "raster_100dpi_size": [
+    710,
+    265
+   ],
+   "pixels_differing_over_32_of_255": 0,
+   "fraction": 0.0
+  },
+  "supplement/figures/figS2_window_branches.pdf": {
+   "pdf_byte_identical": true,
+   "raster_100dpi_size": [
+    1550,
+    560
+   ],
+   "pixels_differing_over_32_of_255": 0,
+   "fraction": 0.0
+  },
+  "supplement/figures/figS3_posthoc_fixed_delta.pdf": {
+   "pdf_byte_identical": false,
+   "raster_100dpi_size": [
+    350,
+    240
+   ],
+   "pixels_differing_over_32_of_255": 2478,
+   "fraction": 0.0295
+  },
+  "supplement/figures/figS4_noise_distributions.pdf": {
+   "pdf_byte_identical": false,
+   "raster_100dpi_size": [
+    716,
+    220
+   ],
+   "pixels_differing_over_32_of_255": 2692,
+   "fraction": 0.01709
+  }
+ }
+}

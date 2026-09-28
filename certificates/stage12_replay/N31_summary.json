@@ -1,0 +1,26 @@
+{
+  "N": 31,
+  "backend": "python-flint/Arb",
+  "python_flint": "0.9.0",
+  "FLINT": "3.6.0",
+  "precision_bits": 320,
+  "predicates": 28432,
+  "passed": 28432,
+  "failures": [],
+  "counts": {
+    "outer_excluded": 27481,
+    "outer_near_A": 69,
+    "outer_near_B": 34,
+    "inner_objective_excluded": 553,
+    "inner_gradient_excluded": 218,
+    "inner_krawczyk_excluded": 46,
+    "inner_inside_Krawczyk_box": 8
+  },
+  "outer_min_margin": {
+    "crossing": 0.00010809124995015376
+  },
+  "elapsed_seconds": 45.33169221878052,
+  "refined_archived_inner_cells": 44,
+  "refinement_nodes": 132,
+  "alternate_inner_proofs": 49
+}

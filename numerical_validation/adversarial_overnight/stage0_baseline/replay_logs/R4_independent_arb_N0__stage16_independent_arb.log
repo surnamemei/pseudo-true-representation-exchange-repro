@@ -1,0 +1,50 @@
+Arb local: True True
+Arb cells: 5000 failures: 0
+Arb cells: 10000 failures: 0
+Arb cells: 15000 failures: 0
+Arb cells: 20000 failures: 0
+Arb cells: 25000 failures: 0
+{
+  "backend": "python-flint/Arb 0.9.0",
+  "precision_decimal_digits": 85,
+  "N0": 35377,
+  "t_max": "[7.990206382814997866393797496357693240186024371408979970054468333988731343228664327802e-10 +/- 2.68e-95]",
+  "partition_cells": 27708,
+  "partition_cover": true,
+  "predicate_counts": {
+    "cost_excluded": 25274,
+    "gradient_excluded": 1420,
+    "monotone_derivative_no_root": 1012,
+    "unique_root_B_min": 1,
+    "unique_root_A_min": 1
+  },
+  "passed": 27708,
+  "original_cells_refined": 10,
+  "refinement_nodes": 26,
+  "refined_original_indices": [
+    350,
+    25687,
+    25952,
+    25953,
+    25954,
+    26614,
+    26744,
+    26745,
+    27031,
+    27242
+  ],
+  "failed": 0,
+  "root_boxes_linked": true,
+  "cost_margin_lower": "4.074033620442979453102338993630837649106979370117187500000000000000000000000000000000e-9",
+  "gradient_margin_lower": "1.034277374856173992156982421875000000000000000000000000000000000000000000000000000000e-8",
+  "curvature_sign_margin_lower": "1.026687641569878906011581420898437500000000000000000000000000000000000000000000000000e-7",
+  "coalescent_gap_lower": "0.0008511669596707599483309536481101531535387039184570312500000000000000000000000000000000",
+  "tail_gap_lower": "0.003135660089780493504952698455171076347136605022569710854440927505493164062500000000000",
+  "kernel_remainder": {
+    "bound_N0": "[9.98991003323628057491770969104002444446846887610501247714352902926596437110343396988e-31 +/- 8.76e-115]",
+    "bound_previous_odd": "[1.000008135514380130545502838883354694588151696588608995474655851063316303441645420381e-30 +/- 7.63e-115]",
+    "under_1e-30": true,
+    "previous_over_1e-30": true
+  },
+  "verified": true
+}

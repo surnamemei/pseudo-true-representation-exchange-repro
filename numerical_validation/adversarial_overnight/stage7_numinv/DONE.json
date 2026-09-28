@@ -1,0 +1,175 @@
+{
+ "points": [
+  "baseline",
+  "hann",
+  "kappa0p2_z0p5",
+  "fixeddelta0p2_z0p2",
+  "weakest_margin"
+ ],
+ "weakest_margin_point": {
+  "third_margin_rel": 0.027642372131077647,
+  "eps_c": 0.009700815431107382,
+  "source": "S2B_d0p05_z0p1.json"
+ },
+ "variant_changes": [],
+ "n_variant_runs": 45,
+ "precision": {
+  "baseline": {
+   "float64": 0.2481906301722768,
+   "mpmath40": "0.248190630172277398203609851355",
+   "rel_diff": 2.4602970028319865e-15
+  },
+  "hann": {
+   "float64": 0.1471361491225018,
+   "mpmath40": "0.147136149122493769936895695746",
+   "rel_diff": 5.470523033623325e-14
+  },
+  "kappa0p2_z0p5": {
+   "float64": 0.03280025016219302,
+   "mpmath40": "0.032800250162156159549674493471",
+   "rel_diff": 1.1237537590515804e-12
+  }
+ },
+ "noisy": {
+  "base": {
+   "label_or_J_changes": 0,
+   "labels": {
+    "A": 31,
+    "B": 19,
+    "OUT": 0
+   }
+  },
+  "grid_coarse": {
+   "label_or_J_changes": 0,
+   "labels": {
+    "A": 31,
+    "B": 19,
+    "OUT": 0
+   }
+  },
+  "grid_fine": {
+   "label_or_J_changes": 0,
+   "labels": {
+    "A": 31,
+    "B": 19,
+    "OUT": 0
+   }
+  },
+  "rand_8": {
+   "label_or_J_changes": 0,
+   "labels": {
+    "A": 31,
+    "B": 19,
+    "OUT": 0
+   }
+  },
+  "rand_128": {
+   "label_or_J_changes": 0,
+   "labels": {
+    "A": 31,
+    "B": 19,
+    "OUT": 0
+   }
+  },
+  "kgrid_16": {
+   "label_or_J_changes": 0,
+   "labels": {
+    "A": 31,
+    "B": 19,
+    "OUT": 0
+   }
+  },
+  "kgrid_200": {
+   "label_or_J_changes": 0,
+   "labels": {
+    "A": 31,
+    "B": 19,
+    "OUT": 0
+   }
+  },
+  "tol_1e-7": {
+   "label_or_J_changes": 0,
+   "labels": {
+    "A": 31,
+    "B": 19,
+    "OUT": 0
+   }
+  },
+  "tol_1e-11": {
+   "label_or_J_changes": 0,
+   "labels": {
+    "A": 31,
+    "B": 19,
+    "OUT": 0
+   }
+  }
+ },
+ "interval_path": {
+  "iv_arith": 1600,
+  "iv_arith_fail": 0,
+  "iv_trans": 561,
+  "iv_trans_fail": 0,
+  "arb_arith": 900,
+  "arb_arith_fail": 0,
+  "arb_trans": 576,
+  "arb_trans_fail": 0,
+  "arb_available": true
+ },
+ "replay_independence": {
+  "stage12_full_arb_replay.py": {
+   "imports": [
+    "functools",
+    "stage12_arb_backend"
+   ],
+   "imports_primary": [],
+   "independent": true
+  },
+  "stage12_arb_backend.py": {
+   "imports": [
+    "csv",
+    "decimal",
+    "flint",
+    "json",
+    "math",
+    "pathlib",
+    "sys",
+    "time"
+   ],
+   "imports_primary": [],
+   "independent": true
+  },
+  "stage16_independent_arb.py": {
+   "imports": [
+    "__future__",
+    "csv",
+    "dataclasses",
+    "flint",
+    "fractions",
+    "json",
+    "math",
+    "pathlib"
+   ],
+   "imports_primary": [],
+   "independent": true
+  },
+  "bcert_arb.py (this run)": {
+   "imports": [
+    "__future__",
+    "flint",
+    "fractions",
+    "math",
+    "numpy",
+    "pathlib",
+    "sys"
+   ],
+   "imports_primary": [],
+   "independent": true
+  }
+ },
+ "reproducibility": {
+  "global_search_bitwise_identical": true,
+  "n_minima": 77
+ },
+ "classification_changes": [],
+ "any_classification_change": false
+}

@@ -1,0 +1,54 @@
+N 21 outer 0 / 37753 elapsed 0
+N 21 outer 2500 / 37753 elapsed 2
+N 21 outer 5000 / 37753 elapsed 4
+N 21 outer 7500 / 37753 elapsed 6
+N 21 outer 10000 / 37753 elapsed 7
+N 21 outer 12500 / 37753 elapsed 9
+N 21 outer 15000 / 37753 elapsed 11
+N 21 outer 17500 / 37753 elapsed 12
+N 21 outer 20000 / 37753 elapsed 14
+N 21 outer 22500 / 37753 elapsed 15
+N 21 outer 25000 / 37753 elapsed 17
+N 21 outer 27500 / 37753 elapsed 19
+N 21 outer 30000 / 37753 elapsed 20
+N 21 outer 32500 / 37753 elapsed 22
+N 21 outer 35000 / 37753 elapsed 23
+N 21 outer 37500 / 37753 elapsed 25
+N 21 inner 0 / 1976
+N 21 inner 200 / 1976
+N 21 inner 400 / 1976
+N 21 inner 600 / 1976
+N 21 inner 800 / 1976
+N 21 inner 1000 / 1976
+N 21 inner 1200 / 1976
+N 21 inner 1400 / 1976
+N 21 inner 1600 / 1976
+N 21 inner 1800 / 1976
+{
+  "N": 21,
+  "backend": "python-flint/Arb",
+  "python_flint": "0.9.0",
+  "FLINT": "3.6.0",
+  "precision_bits": 320,
+  "predicates": 39792,
+  "passed": 39792,
+  "failures": [],
+  "counts": {
+    "outer_excluded": 37536,
+    "outer_near_A": 143,
+    "outer_near_B": 74,
+    "inner_objective_excluded": 1408,
+    "inner_gradient_excluded": 455,
+    "inner_krawczyk_excluded": 97,
+    "inner_inside_Krawczyk_box": 16
+  },
+  "outer_min_margin": {
+    "below": 2.708402905955197e-05,
+    "crossing": 5.897894598669576e-06,
+    "above": 8.65758148062796e-06
+  },
+  "elapsed_seconds": 50.369657039642334,
+  "refined_archived_inner_cells": 128,
+  "refinement_nodes": 384,
+  "alternate_inner_proofs": 144
+}

@@ -1,0 +1,9 @@
+# Conda alternative to requirements.txt (same pinned versions).
+name: pseudo-true-exchange-repro
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12
+  - pip
+  - pip:
+      - -r requirements.txt

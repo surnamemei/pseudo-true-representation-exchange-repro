@@ -1,0 +1,33 @@
+[02:37:42][S3] === stage 3 (s3_bwidth) start
+[02:37:46][S3] S3 finite b: 11 configs x 101 points = 1111 GS(P) tasks
+[02:37:55][S3] Stage 3A diagnostic radius 0.5; crosscheck pass True
+[02:37:55][S3] s3b_bcert not present; 3B skipped for now
+[02:37:55][S3] === stage 3 done in 12.6 s
+[03:41:37][S3] === stage 3 (s3_bwidth) start
+[03:41:37][S3] Stage 3A already complete
+[05:23:42][S3] 3B primary: block 9.95 ok=False (6123s) [1/50]
+[05:23:46][S3] 3B primary: block 9.88 ok=False (6127s) [2/50]
+[05:23:54][S3] 3B primary: block 9.94 ok=False (6135s) [3/50]
+[05:23:58][S3] 3B primary: block 9.90 ok=False (6138s) [4/50]
+[05:24:02][S3] 3B primary: block 10.00 ok=False (6137s) [5/50]
+[05:24:06][S3] 3B primary: block 9.96 ok=False (6148s) [6/50]
+[05:24:12][S3] 3B primary: block 9.98 ok=False (6154s) [7/50]
+[05:24:17][S3] 3B primary: block 9.99 ok=False (6159s) [8/50]
+[05:24:22][S3] 3B primary: block 9.92 ok=False (6163s) [9/50]
+[05:24:33][S3] 3B primary: block 9.97 ok=False (6174s) [10/50]
+[05:24:39][S3] 3B primary: block 9.89 ok=False (6180s) [11/50]
+[05:24:43][S3] 3B primary: block 9.93 ok=False (6181s) [12/50]
+[05:25:02][S3] 3B primary: block 9.91 ok=False (6203s) [13/50]
+[05:25:33][S3] 3B primary: block 10.03 ok=False (6234s) [14/50]
+[05:25:47][S3] 3B primary: block 10.01 ok=False (6249s) [15/50]
+[05:25:51][S3] 3B primary: block 10.07 ok=False (6249s) [16/50]
+[05:25:57][S3] 3B primary: block 10.06 ok=False (6258s) [17/50]
+[05:26:01][S3] 3B primary: block 10.04 ok=False (6259s) [18/50]
+[05:26:08][S3] 3B primary: block 10.05 ok=False (6270s) [19/50]
+[05:26:13][S3] 3B primary: block 10.08 ok=False (6274s) [20/50]
+[05:26:18][S3] 3B primary: block 10.09 ok=False (6277s) [21/50]
+[05:26:22][S3] 3B primary: block 10.10 ok=False (6275s) [22/50]
+[05:26:25][S3] 3B primary: block 10.11 ok=False (6275s) [23/50]
+[05:26:40][S3] 3B primary: block 10.02 ok=False (6301s) [24/50]
+[05:29:38][S3] 3B verdict NO_EXPLICIT_B_INTERVAL_CERTIFIED; candidates [(['9.75', '10.25'], 'failed'), (['9.90', '10.10'], 'failed'), (['9.95', '10.05'], 'failed'), (['9.98', '10.02'], 'failed'), (['9.99', '10.01'], 'failed')]
+[05:29:39][S3] === stage 3 done in 6481.5 s

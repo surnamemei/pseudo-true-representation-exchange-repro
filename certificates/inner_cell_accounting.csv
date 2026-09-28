@@ -1,0 +1,9 @@
+N,case,branch,archived_visited,archived_internal_parents,archived_terminal_obligations,archived_duplicate_terminal_coordinates,accepted_root_box_terminals,arb_replayed_archived_terminals,arb_refined_archived_parents,arb_refined_child_leaves,arb_effective_terminal_leaves,arb_alternate_predicate_proofs,objective_excluded,gradient_excluded,krawczyk_excluded,all_pass
+21,above,A,365,182,183,0,0,183,19,38,202,19,172,11,0,True
+21,above,B,269,134,135,0,4,135,8,16,143,13,78,50,3,True
+21,below,A,1571,785,786,0,4,786,50,100,836,54,574,162,46,True
+21,below,B,105,52,53,0,0,53,10,20,63,11,40,13,0,True
+21,crossing,A,1357,678,679,0,4,679,32,64,711,35,464,167,44,True
+21,crossing,B,279,139,140,0,4,140,9,18,149,12,80,52,4,True
+31,crossing,A,1371,685,686,0,4,686,34,68,720,36,474,166,42,True
+31,crossing,B,277,138,139,0,4,139,10,20,149,13,79,52,4,True

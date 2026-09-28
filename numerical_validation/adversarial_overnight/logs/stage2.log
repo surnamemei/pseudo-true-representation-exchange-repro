@@ -1,0 +1,8 @@
+[02:33:31][S2] === stage 2 (s2_phase) start
+[02:33:33][S2] S2 finite: 85 configs x 101 points = 8585 GS(P) tasks
+[02:34:35][S2] boundary rule: extending 44 configs to [hi, 3hi]
+[02:35:08][S2] Stage 2 classification INCONCLUSIVE
+[02:35:08][S2] === stage 2 done in 97.5 s
+[02:37:17][S2] === stage 2 (s2_phase) start
+[02:37:19][S2] Stage 2 classification INCONCLUSIVE
+[02:37:19][S2] === stage 2 done in 1.8 s

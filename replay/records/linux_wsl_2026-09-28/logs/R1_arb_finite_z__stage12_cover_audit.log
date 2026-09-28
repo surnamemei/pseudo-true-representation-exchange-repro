@@ -1,0 +1,195 @@
+[
+  {
+    "cells": 11012,
+    "domain": [
+      "-3.141592653589793",
+      "3.141592653589793",
+      "0.0",
+      "1.5707963267948966"
+    ],
+    "minimum_cover_count": 1,
+    "uncovered_slabs": [],
+    "complete": true,
+    "N": 21,
+    "case": "above",
+    "kind": "outer",
+    "true_torus_covered": true
+  },
+  {
+    "cells": 183,
+    "domain": [
+      "-7.063369196188758",
+      "-3.063369176188758",
+      "-1.4484284903551901",
+      "2.5515715296448099"
+    ],
+    "minimum_cover_count": 1,
+    "uncovered_slabs": [],
+    "complete": true,
+    "expected_neighborhood_matches": true,
+    "N": 21,
+    "case": "above",
+    "kind": "inner_A"
+  },
+  {
+    "cells": 135,
+    "domain": [
+      "-2.0659384608155938",
+      "1.9340615591844062",
+      "10.267352411766489",
+      "14.267352431766489"
+    ],
+    "minimum_cover_count": 1,
+    "uncovered_slabs": [],
+    "complete": true,
+    "expected_neighborhood_matches": true,
+    "N": 21,
+    "case": "above",
+    "kind": "inner_B"
+  },
+  {
+    "cells": 12364,
+    "domain": [
+      "-3.141592653589793",
+      "3.141592653589793",
+      "0.0",
+      "1.5707963267948966"
+    ],
+    "minimum_cover_count": 1,
+    "uncovered_slabs": [],
+    "complete": true,
+    "N": 21,
+    "case": "below",
+    "kind": "outer",
+    "true_torus_covered": true
+  },
+  {
+    "cells": 786,
+    "domain": [
+      "-6.455281949392258",
+      "-2.455281929392258",
+      "-1.3266421904095501",
+      "2.6733578295904499"
+    ],
+    "minimum_cover_count": 1,
+    "uncovered_slabs": [],
+    "complete": true,
+    "expected_neighborhood_matches": true,
+    "N": 21,
+    "case": "below",
+    "kind": "inner_A"
+  },
+  {
+    "cells": 53,
+    "domain": [
+      "-2.04914751465201223",
+      "1.95085250534798777",
+      "10.68667727490621",
+      "14.68667729490621"
+    ],
+    "minimum_cover_count": 1,
+    "uncovered_slabs": [],
+    "complete": true,
+    "expected_neighborhood_matches": true,
+    "N": 21,
+    "case": "below",
+    "kind": "inner_B"
+  },
+  {
+    "cells": 14377,
+    "domain": [
+      "-3.141592653589793",
+      "3.141592653589793",
+      "0.0",
+      "1.5707963267948966"
+    ],
+    "minimum_cover_count": 1,
+    "uncovered_slabs": [],
+    "complete": true,
+    "N": 21,
+    "case": "crossing",
+    "kind": "outer",
+    "true_torus_covered": true
+  },
+  {
+    "cells": 679,
+    "domain": [
+      "-6.772447341033973",
+      "-2.772447321033973",
+      "-1.3948296877761016",
+      "2.6051703322238984"
+    ],
+    "minimum_cover_count": 1,
+    "uncovered_slabs": [],
+    "complete": true,
+    "expected_neighborhood_matches": true,
+    "N": 21,
+    "case": "crossing",
+    "kind": "inner_A"
+  },
+  {
+    "cells": 140,
+    "domain": [
+      "-2.05765357138991251",
+      "1.94234644861008749",
+      "10.463419401063768",
+      "14.463419421063768"
+    ],
+    "minimum_cover_count": 1,
+    "uncovered_slabs": [],
+    "complete": true,
+    "expected_neighborhood_matches": true,
+    "N": 21,
+    "case": "crossing",
+    "kind": "inner_B"
+  },
+  {
+    "cells": 27584,
+    "domain": [
+      "-3.141592653589793",
+      "3.141592653589793",
+      "0.0",
+      "1.5707963267948966"
+    ],
+    "minimum_cover_count": 1,
+    "uncovered_slabs": [],
+    "complete": true,
+    "N": 31,
+    "case": "crossing",
+    "kind": "outer",
+    "true_torus_covered": true
+  },
+  {
+    "cells": 686,
+    "domain": [
+      "-6.732308165500305",
+      "-2.732308145500305",
+      "-1.3864258974663189",
+      "2.6135741225336811"
+    ],
+    "minimum_cover_count": 1,
+    "uncovered_slabs": [],
+    "complete": true,
+    "expected_neighborhood_matches": true,
+    "N": 31,
+    "case": "crossing",
+    "kind": "inner_A"
+  },
+  {
+    "cells": 139,
+    "domain": [
+      "-2.05731378959637947",
+      "1.94268623040362053",
+      "10.440325818105324",
+      "14.440325838105324"
+    ],
+    "minimum_cover_count": 1,
+    "uncovered_slabs": [],
+    "complete": true,
+    "expected_neighborhood_matches": true,
+    "N": 31,
+    "case": "crossing",
+    "kind": "inner_B"
+  }
+]
+Verified refinement parent covers: 172

@@ -1,0 +1,16 @@
+{
+  "final_closed_interval": [
+    "0.213190630172278",
+    "0.283190630172277"
+  ],
+  "final_width": "0.069999999999999",
+  "outer_parent_cells": 14287,
+  "outer_terminal_leaves": 19054,
+  "outer_refined_parent_count": 3738,
+  "inner_parent_cells": 819,
+  "inner_terminal_leaves": 985705,
+  "inner_unique_parent_count": 819,
+  "epsilon_slabs": 4096,
+  "root_joints": 8190,
+  "all_exact_cover_identities_pass": true
+}

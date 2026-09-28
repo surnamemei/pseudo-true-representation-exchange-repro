@@ -1,0 +1,14 @@
+{
+ "purpose": "post-move check (Windows F:/Research -> WSL2 Ubuntu home directory)",
+ "time": "2026-09-28T15:56:33+1000",
+ "freeze_manifest_sha256": "1410a153ff894bec997005f830c6e41e89a431d3dfa7bfd2be14dd4b26709ab2",
+ "checked": 766,
+ "unchanged": 732,
+ "changed": 34,
+ "missing": [],
+ "changed_set_identical_to_final_presubmission_record": true,
+ "unexpected_changes": [],
+ "stage24_revision_manifest_sha256": "968d3105e5ed36200a3fb9dfef9b63fc1cd3127ce276bb71d4902e2f30342f95",
+ "stage24_deliverables_checked": 51,
+ "stage24_deliverables_mismatched": []
+}

@@ -1,0 +1,33 @@
+[02:37:55][S6] === stage 6 (s6_noise) start
+[02:38:30][S6] 6A level P: prod disagreements 0/600, legacy 0/600
+[02:38:51][S6] 6B projection 3.2 min -> trials 1000
+[02:42:12][S6] stage 6 FAILED: ValueError("'yerr' must not contain negative values")
+Traceback (most recent call last):
+  File "F:\Research\validation\adversarial_overnight\run_all.py", line 56, in main
+    m.run()
+    ~~~~~^^
+  File "F:\Research\validation\adversarial_overnight\s6_noise.py", line 202, in run
+    out = analyse(roots, n_trials, sa_rec)
+  File "F:\Research\validation\adversarial_overnight\s6_noise.py", line 309, in analyse
+    plots(summ, rows, roots)
+    ~~~~~^^^^^^^^^^^^^^^^^^^
+  File "F:\Research\validation\adversarial_overnight\s6_noise.py", line 322, in plots
+    ax.errorbar(e, [s["P_A"] for s in ss], yerr=[[s["P_A"] - s["P_A_lo"] for s in ss], [s["P_A_hi"] - s["P_A"] for s in ss]],
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                fmt="o-", ms=3, color=col[snr], label=f"P(A) {snr} dB")
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\ANACONDA\Lib\site-packages\matplotlib\_api\deprecation.py", line 453, in wrapper
+    return func(*args, **kwargs)
+  File "D:\ANACONDA\Lib\site-packages\matplotlib\__init__.py", line 1524, in inner
+    return func(
+        ax,
+        *map(cbook.sanitize_sequence, args),
+        **{k: cbook.sanitize_sequence(v) for k, v in kwargs.items()})
+  File "D:\ANACONDA\Lib\site-packages\matplotlib\axes\_axes.py", line 3825, in errorbar
+    raise ValueError(
+        f"'{dep_axis}err' must not contain negative values")
+ValueError: 'yerr' must not contain negative values
+
+[02:43:26][S6] === stage 6 (s6_noise) start
+[02:43:29][S6] Stage 6 hypotheses {'H1': True, 'H2': True, 'H3': True, 'TSP_consequence': True}
+[02:43:29][S6] === stage 6 done in 2.9 s

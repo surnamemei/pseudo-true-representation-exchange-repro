@@ -1,0 +1,101 @@
+[
+ {
+  "theta": 0.0,
+  "ca_eps_c": 0.24819063017227688,
+  "cont_eps_c": 0.24819063017227813,
+  "dA": 2.842170943040401e-14,
+  "dB": 0.0,
+  "ca_status": "present",
+  "same_branches": true
+ },
+ {
+  "theta": 0.1,
+  "ca_eps_c": 0.2444495254869968,
+  "cont_eps_c": 0.2444495254869956,
+  "dA": 3.360867140145274e-12,
+  "dB": 7.673861546209082e-13,
+  "ca_status": "present",
+  "same_branches": true
+ },
+ {
+  "theta": 0.2,
+  "ca_eps_c": 0.24012221642997505,
+  "cont_eps_c": 0.24012221642997525,
+  "dA": 4.973799150320701e-14,
+  "dB": 3.126388037344441e-12,
+  "ca_status": "present",
+  "same_branches": true
+ },
+ {
+  "theta": 0.3,
+  "ca_eps_c": 0.235108113739947,
+  "cont_eps_c": 0.2351081137399472,
+  "dA": 5.684341886080802e-14,
+  "dB": 3.694822225952521e-12,
+  "ca_status": "present",
+  "same_branches": true
+ },
+ {
+  "theta": 0.4,
+  "ca_eps_c": 0.22925977668471384,
+  "cont_eps_c": 0.2292597766847185,
+  "dA": 5.684341886080802e-14,
+  "dB": 0.0,
+  "ca_status": "present",
+  "same_branches": true
+ },
+ {
+  "theta": 0.5,
+  "ca_eps_c": 0.22235956855264893,
+  "cont_eps_c": 0.22235956855265124,
+  "dA": 2.9629632081196178e-12,
+  "dB": 1.9468870959826745e-12,
+  "ca_status": "present",
+  "same_branches": true
+ },
+ {
+  "theta": 0.6,
+  "ca_eps_c": 0.21407723987812854,
+  "cont_eps_c": 0.21407723987813107,
+  "dA": 9.812595180846984e-12,
+  "dB": 1.5205614545266144e-12,
+  "ca_status": "present",
+  "same_branches": true
+ },
+ {
+  "theta": 0.7,
+  "ca_eps_c": 0.20388669436339055,
+  "cont_eps_c": 0.20388669436338552,
+  "dA": 2.842170943040401e-14,
+  "dB": 8.526512829121202e-14,
+  "ca_status": "present",
+  "same_branches": true
+ },
+ {
+  "theta": 0.8,
+  "ca_eps_c": 0.1908824059689884,
+  "cont_eps_c": 0.19088240596898828,
+  "dA": 1.1652900866465643e-12,
+  "dB": 7.247535904753022e-13,
+  "ca_status": "present",
+  "same_branches": true
+ },
+ {
+  "theta": 0.9,
+  "ca_eps_c": 0.17329464858300175,
+  "cont_eps_c": 0.17329464858300295,
+  "dA": 3.538502824085299e-12,
+  "dB": 2.1316282072803006e-13,
+  "ca_status": "present",
+  "same_branches": true
+ },
+ {
+  "theta": 1.0,
+  "ca_eps_c": 0.14713614912249456,
+  "cont_eps_c": 0.1471361491224958,
+  "dA": 4.760636329592671e-13,
+  "dB": 3.694822225952521e-13,
+  "ca_status": "present",
+  "same_branches": true
+ }
+]

@@ -1,0 +1,663 @@
+{
+ "R1_arb_finite_z": {
+  "state": {
+   "status": "done",
+   "started": "2026-09-28T02:27:49+1000",
+   "steps": [
+    {
+     "cmd": [
+      "stage12_full_arb_replay.py",
+      "21"
+     ],
+     "returncode": 0,
+     "seconds": 66.3,
+     "log": "R1_arb_finite_z__stage12_full_arb_replay_21.log"
+    },
+    {
+     "cmd": [
+      "stage12_full_arb_replay.py",
+      "31"
+     ],
+     "returncode": 0,
+     "seconds": 51.6,
+     "log": "R1_arb_finite_z__stage12_full_arb_replay_31.log"
+    },
+    {
+     "cmd": [
+      "stage12_cover_audit.py"
+     ],
+     "returncode": 0,
+     "seconds": 1.2,
+     "log": "R1_arb_finite_z__stage12_cover_audit.log"
+    }
+   ],
+   "finished": "2026-09-28T02:29:48+1000"
+  },
+  "outputs": [
+   {
+    "output": "stage12_replay/N21_predicates.csv",
+    "frozen_exists": true,
+    "replay_exists": true,
+    "identical_bytes": true
+   },
+   {
+    "output": "stage12_replay/N21_refinement_leaves.csv",
+    "frozen_exists": true,
+    "replay_exists": true,
+    "identical_bytes": true
+   },
+   {
+    "output": "stage12_replay/N21_summary.json",
+    "frozen_exists": true,
+    "replay_exists": true,
+    "identical_bytes": false,
+    "json_diff_keys_total": 1,
+    "json_diff_volatile": 1,
+    "json_diff_substantive": [],
+    "json_diff_substantive_count": 0,
+    "flag_mismatches": []
+   },
+   {
+    "output": "stage12_replay/N31_predicates.csv",
+    "frozen_exists": true,
+    "replay_exists": true,
+    "identical_bytes": true
+   },
+   {
+    "output": "stage12_replay/N31_refinement_leaves.csv",
+    "frozen_exists": true,
+    "replay_exists": true,
+    "identical_bytes": true
+   },
+   {
+    "output": "stage12_replay/N31_summary.json",
+    "frozen_exists": true,
+    "replay_exists": true,
+    "identical_bytes": false,
+    "json_diff_keys_total": 1,
+    "json_diff_volatile": 1,
+    "json_diff_substantive": [],
+    "json_diff_substantive_count": 0,
+    "flag_mismatches": []
+   },
+   {
+    "output": "stage12_replay/coverage_audit.json",
+    "frozen_exists": true,
+    "replay_exists": true,
+    "identical_bytes": true
+   },
+   {
+    "output": "stage12_replay/refinement_coverage_audit.json",
+    "frozen_exists": true,
+    "replay_exists": true,
+    "identical_bytes": true
+   }
+  ]
+ },
+ "R2_generalN": {
+  "state": {
+   "status": "done",
+   "started": "2026-09-28T02:27:49+1000",
+   "steps": [
+    {
+     "cmd": [
+      "stage12_generalN.py",
+      "11"
+     ],
+     "returncode": 0,
+     "seconds": 147.8,
+     "log": "R2_generalN__stage12_generalN_11.log"
+    },
+    {
+     "cmd": [
+      "stage12_generalN.py",
+      "15"
+     ],
+     "returncode": 0,
+     "seconds": 227.4,
+     "log": "R2_generalN__stage12_generalN_15.log"
+    },
+    {
+     "cmd": [
+      "stage12_generalN.py",
+      "21"
+     ],
+     "returncode": 0,
+     "seconds": 341.0,
+     "log": "R2_generalN__stage12_generalN_21.log"
+    },
+    {
+     "cmd": [
+      "stage12_generalN.py",
+      "31"
+     ],
+     "returncode": 0,
+     "seconds": 544.8,
+     "log": "R2_generalN__stage12_generalN_31.log"
+    },
+    {
+     "cmd": [
+      "stage12_generalN.py",
+      "41"
+     ],
+     "returncode": 0,
+     "seconds": 828.3,
+     "log": "R2_generalN__stage12_generalN_41.log"
+    }
+   ],
+   "finished": "2026-09-28T03:02:39+1000"
+  },
+  "outputs": [
+   {
+    "output": "stage12_generalN/N11_certificate.json",
+    "frozen_exists": true,
+    "replay_exists": true,
+    "identical_bytes": true
+   },
+   {
+    "output": "stage12_generalN/N11_partition.csv",
+    "frozen_exists": true,
+    "replay_exists": true,
+    "identical_bytes": true
+   },
+   {
+    "output": "stage12_generalN/N11_reference.json",
+    "frozen_exists": true,
+    "replay_exists": true,
+    "identical_bytes": true
+   },
+   {
+    "output": "stage12_generalN/N11_roots.csv",
+    "frozen_exists": true,
+    "replay_exists": true,
+    "identical_bytes": true
+   },
+   {
+    "output": "stage12_generalN/N15_certificate.json",
+    "frozen_exists": true,
+    "replay_exists": true,
+    "identical_bytes": true
+   },
+   {
+    "output": "stage12_generalN/N15_partition.csv",
+    "frozen_exists": true,
+    "replay_exists": true,
+    "identical_bytes": true
+   },
+   {
+    "output": "stage12_generalN/N15_reference.json",
+    "frozen_exists": true,
+    "replay_exists": true,
+    "identical_bytes": true
+   },
+   {
+    "output": "stage12_generalN/N15_roots.csv",
+    "frozen_exists": true,
+    "replay_exists": true,
+    "identical_bytes": true
+   },
+   {
+    "output": "stage12_generalN/N21_certificate.json",
+    "frozen_exists": true,
+    "replay_exists": true,
+    "identical_bytes": true
+   },
+   {
+    "output": "stage12_generalN/N21_partition.csv",
+    "frozen_exists": true,
+    "replay_exists": true,
+    "identical_bytes": true
+   },
+   {
+    "output": "stage12_generalN/N21_reference.json",
+    "frozen_exists": true,
+    "replay_exists": true,
+    "identical_bytes": true
+   },
+   {
+    "output": "stage12_generalN/N21_roots.csv",
+    "frozen_exists": true,
+    "replay_exists": true,
+    "identical_bytes": true
+   },
+   {
+    "output": "stage12_generalN/N31_certificate.json",
+    "frozen_exists": true,
+    "replay_exists": true,
+    "identical_bytes": true
+   },
+   {
+    "output": "stage12_generalN/N31_partition.csv",
+    "frozen_exists": true,
+    "replay_exists": true,
+    "identical_bytes": true
+   },
+   {
+    "output": "stage12_generalN/N31_reference.json",
+    "frozen_exists": true,
+    "replay_exists": true,
+    "identical_bytes": true
+   },
+   {
+    "output": "stage12_generalN/N31_roots.csv",
+    "frozen_exists": true,
+    "replay_exists": true,
+    "identical_bytes": true
+   },
+   {
+    "output": "stage12_generalN/N41_certificate.json",
+    "frozen_exists": true,
+    "replay_exists": true,
+    "identical_bytes": true
+   },
+   {
+    "output": "stage12_generalN/N41_partition.csv",
+    "frozen_exists": true,
+    "replay_exists": true,
+    "identical_bytes": true
+   },
+   {
+    "output": "stage12_generalN/N41_reference.json",
+    "frozen_exists": true,
+    "replay_exists": true,
+    "identical_bytes": true
+   },
+   {
+    "output": "stage12_generalN/N41_roots.csv",
+    "frozen_exists": true,
+    "replay_exists": true,
+    "identical_bytes": true
+   }
+  ]
+ },
+ "R3_continuum": {
+  "state": {
+   "status": "done",
+   "started": "2026-09-28T02:27:49+1000",
+   "steps": [
+    {
+     "cmd": [
+      "stage14_continuum.py"
+     ],
+     "returncode": 0,
+     "seconds": 5.2,
+     "log": "R3_continuum__stage14_continuum.log"
+    },
+    {
+     "cmd": [
+      "stage14_continuum_interval.py"
+     ],
+     "returncode": 0,
+     "seconds": 0.2,
+     "log": "R3_continuum__stage14_continuum_interval.log"
+    },
+    {
+     "cmd": [
+      "stage14_continuum_global_hybrid.py"
+     ],
+     "returncode": 0,
+     "seconds": 97.7,
+     "log": "R3_continuum__stage14_continuum_global_hybrid.log"
+    },
+    {
+     "cmd": [
+      "stage14_replay_global.py"
+     ],
+     "returncode": 0,
+     "seconds": 51.3,
+     "log": "R3_continuum__stage14_replay_global.log"
+    },
+    {
+     "cmd": [
+      "stage14_continuum_endpoint_interval.py"
+     ],
+     "returncode": 0,
+     "seconds": 0.1,
+     "log": "R3_continuum__stage14_continuum_endpoint_interval.log"
+    }
+   ],
+   "finished": "2026-09-28T02:30:24+1000"
+  },
+  "outputs": [
+   {
+    "output": "stage14_continuum_candidate.json",
+    "frozen_exists": true,
+    "replay_exists": true,
+    "identical_bytes": true
+   },
+   {
+    "output": "stage14_continuum_candidate_roots.csv",
+    "frozen_exists": true,
+    "replay_exists": true,
+    "identical_bytes": true
+   },
+   {
+    "output": "stage14_continuum_local_interval.json",
+    "frozen_exists": true,
+    "replay_exists": true,
+    "identical_bytes": true
+   },
+   {
+    "output": "continuum_global_certificate.json",
+    "frozen_exists": true,
+    "replay_exists": true,
+    "identical_bytes": false,
+    "json_diff_keys_total": 0,
+    "json_diff_volatile": 0,
+    "json_diff_substantive": [],
+    "json_diff_substantive_count": 0,
+    "flag_mismatches": []
+   },
+   {
+    "output": "stage14_continuum_global_partition.csv",
+    "frozen_exists": true,
+    "replay_exists": true,
+    "identical_bytes": true
+   },
+   {
+    "output": "stage14_continuum_global_roots.csv",
+    "frozen_exists": true,
+    "replay_exists": true,
+    "identical_bytes": true
+   },
+   {
+    "output": "stage14_continuum_global_replay.json",
+    "frozen_exists": true,
+    "replay_exists": true,
+    "identical_bytes": true
+   },
+   {
+    "output": "stage14_continuum_endpoint_interval.json",
+    "frozen_exists": true,
+    "replay_exists": true,
+    "identical_bytes": true
+   }
+  ]
+ },
+ "R4_independent_arb_N0": {
+  "state": {
+   "status": "done",
+   "started": "2026-09-28T02:30:24+1000",
+   "steps": [
+    {
+     "cmd": [
+      "stage16_independent_arb.py"
+     ],
+     "returncode": 0,
+     "seconds": 44.6,
+     "log": "R4_independent_arb_N0__stage16_independent_arb.log"
+    }
+   ],
+   "finished": "2026-09-28T02:31:09+1000"
+  },
+  "outputs": [
+   {
+    "output": "independent_N0_replay.json",
+    "frozen_exists": true,
+    "replay_exists": true,
+    "identical_bytes": false,
+    "json_diff_keys_total": 0,
+    "json_diff_volatile": 0,
+    "json_diff_substantive": [],
+    "json_diff_substantive_count": 0,
+    "flag_mismatches": []
+   },
+   {
+    "output": "independent_N0_replay.csv",
+    "frozen_exists": true,
+    "replay_exists": true,
+    "identical_bytes": true
+   }
+  ]
+ },
+ "R5_largeN_floor_10001": {
+  "state": {
+   "status": "done",
+   "started": "2026-09-28T02:30:24+1000",
+   "steps": [
+    {
+     "cmd": [
+      "stage17_uniform_trial.py",
+      "10001"
+     ],
+     "returncode": 0,
+     "seconds": 337.2,
+     "log": "R5_largeN_floor_10001__stage17_uniform_trial_10001.log"
+    },
+    {
+     "cmd": [
+      "stage17_refine_uniform.py",
+      "10001"
+     ],
+     "returncode": 0,
+     "seconds": 2.3,
+     "log": "R5_largeN_floor_10001__stage17_refine_uniform_10001.log"
+    },
+    {
+     "cmd": [
+      "stage17_largeN_margin_summary.py"
+     ],
+     "returncode": 0,
+     "seconds": 357.5,
+     "log": "R5_largeN_floor_10001__stage17_largeN_margin_summary.log"
+    },
+    {
+     "cmd": [
+      "stage17_write_largeN.py"
+     ],
+     "returncode": 0,
+     "seconds": 0.1,
+     "log": "R5_largeN_floor_10001__stage17_write_largeN.log"
+    },
+    {
+     "cmd": [
+      "stage17_annotate_condition_thresholds.py"
+     ],
+     "returncode": 0,
+     "seconds": 0.1,
+     "log": "R5_largeN_floor_10001__stage17_annotate_condition_thresholds.log"
+    }
+   ],
+   "finished": "2026-09-28T02:42:01+1000"
+  },
+  "outputs": [
+   {
+    "output": "stage17_interval_trial_N10001.json",
+    "frozen_exists": true,
+    "replay_exists": true,
+    "identical_bytes": true
+   },
+   {
+    "output": "stage17_refinement_N10001.json",
+    "frozen_exists": true,
+    "replay_exists": true,
+    "identical_bytes": true
+   },
+   {
+    "output": "stage17_largeN_margins.json",
+    "frozen_exists": true,
+    "replay_exists": true,
+    "identical_bytes": true
+   },
+   {
+    "output": "tightened_N0_certificate.json",
+    "frozen_exists": true,
+    "replay_exists": true,
+    "identical_bytes": true
+   },
+   {
+    "output": "largeN_condition_thresholds.csv",
+    "frozen_exists": true,
+    "replay_exists": true,
+    "identical_bytes": true
+   }
+  ]
+ },
+ "R6_finite_width_eps_0p035": {
+  "state": {
+   "status": "done",
+   "started": "2026-09-28T02:27:49+1000",
+   "steps": [
+    {
+     "cmd": [
+      "stage17_epsilon_refine.py",
+      "0.035",
+      "14287"
+     ],
+     "returncode": 0,
+     "seconds": 161.9,
+     "log": "R6_finite_width_eps_0p035__stage17_epsilon_refine_0p035_14287.log"
+    },
+    {
+     "cmd": [
+      "stage17_epsilon_root_tiling.py",
+      "0.035",
+      "4096"
+     ],
+     "returncode": 0,
+     "seconds": 1354.1,
+     "log": "R6_finite_width_eps_0p035__stage17_epsilon_root_tiling_0p035_4096.log"
+    },
+    {
+     "cmd": [
+      "stage17_epsilon_inner_tiled.py",
+      "_0p035",
+      "3000000"
+     ],
+     "returncode": 0,
+     "seconds": 1823.9,
+     "log": "R6_finite_width_eps_0p035__stage17_epsilon_inner_tiled__0p035_3000000.log"
+    },
+    {
+     "cmd": [
+      "stage17_epsilon_joints.py",
+      "_0p035"
+     ],
+     "returncode": 0,
+     "seconds": 1030.3,
+     "log": "R6_finite_width_eps_0p035__stage17_epsilon_joints__0p035.log"
+    },
+    {
+     "cmd": [
+      "stage17_epsilon_coverage_audit.py",
+      "0.035"
+     ],
+     "returncode": 0,
+     "seconds": 10.9,
+     "log": "R6_finite_width_eps_0p035__stage17_epsilon_coverage_audit_0p035.log"
+    },
+    {
+     "cmd": [
+      "stage17_write_epsilon_certificate.py",
+      "0.035"
+     ],
+     "returncode": 0,
+     "seconds": 7.9,
+     "log": "R6_finite_width_eps_0p035__stage17_write_epsilon_certificate_0p035.log"
+    },
+    {
+     "cmd": [
+      "stage17_epsilon_coeff_crosscheck.py"
+     ],
+     "returncode": 0,
+     "seconds": 2.1,
+     "log": "R6_finite_width_eps_0p035__stage17_epsilon_coeff_crosscheck.log"
+    }
+   ],
+   "finished": "2026-09-28T03:41:00+1000"
+  },
+  "outputs": [
+   {
+    "output": "stage17_epsilon_outer_refinement_0p035_14287.json",
+    "frozen_exists": true,
+    "replay_exists": true,
+    "identical_bytes": true
+   },
+   {
+    "output": "stage17_epsilon_root_tiling_0p035.json",
+    "frozen_exists": true,
+    "replay_exists": true,
+    "identical_bytes": true
+   },
+   {
+    "output": "stage17_epsilon_inner_tiled_0p035.json",
+    "frozen_exists": true,
+    "replay_exists": true,
+    "identical_bytes": true
+   },
+   {
+    "output": "stage17_epsilon_joints_0p035.json",
+    "frozen_exists": true,
+    "replay_exists": true,
+    "identical_bytes": true
+   },
+   {
+    "output": "stage17_epsilon_coverage_audit_0p035.json",
+    "frozen_exists": true,
+    "replay_exists": true,
+    "identical_bytes": true
+   },
+   {
+    "output": "finite_width_epsilon_certificate_0p035.json",
+    "frozen_exists": true,
+    "replay_exists": true,
+    "identical_bytes": true
+   },
+   {
+    "output": "finite_width_epsilon_certificate_0p035.md",
+    "frozen_exists": true,
+    "replay_exists": true,
+    "identical_bytes": true
+   },
+   {
+    "output": "epsilon_interval_obligations_0p035.csv",
+    "frozen_exists": true,
+    "replay_exists": true,
+    "identical_bytes": true
+   },
+   {
+    "output": "stage17_epsilon_coeff_crosscheck.json",
+    "frozen_exists": true,
+    "replay_exists": true,
+    "identical_bytes": true
+   }
+  ]
+ },
+ "R7_lower_transition": {
+  "state": {
+   "status": "done",
+   "started": "2026-09-28T02:27:49+1000",
+   "steps": [
+    {
+     "cmd": [
+      "stage13_build.py"
+     ],
+     "returncode": 0,
+     "seconds": 10.4,
+     "log": "R7_lower_transition__stage13_build.log"
+    }
+   ],
+   "finished": "2026-09-28T02:28:00+1000"
+  },
+  "outputs": [
+   {
+    "output": "lower_transition_certificate.json",
+    "frozen_exists": true,
+    "replay_exists": true,
+    "identical_bytes": true
+   },
+   {
+    "output": "tangent_cost_vs_lambda.csv",
+    "frozen_exists": true,
+    "replay_exists": true,
+    "identical_bytes": true
+   },
+   {
+    "output": "smallz_global_regimes.csv",
+    "frozen_exists": true,
+    "replay_exists": true,
+    "identical_bytes": true
+   }
+  ]
+ }
+}

@@ -1,0 +1,9 @@
+{
+  "lambda_infinity": "0.0665069703923955354559163211301276493455060552554593180186162",
+  "a_1_over_N2": "-0.2315601086498065983415796995351042452168412526422867519",
+  "b_1_over_N4": "-0.2831432749096774046231088807067238430561756725144702789",
+  "v_A_1_over_N2": "-40.49563646218550239216557843615409941507",
+  "v_B_1_over_N2": "19.15838762577246328312643956144598778303",
+  "method": "midpoint Euler-Maclaurin/Dirichlet expansion and implicit crossing derivatives",
+  "status": "analytical expansion conditional on continuum nondegenerate global crossing; coefficients numerically evaluated"
+}

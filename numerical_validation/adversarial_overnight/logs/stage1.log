@@ -1,0 +1,4 @@
+[02:30:51][S1] === stage 1 (s1_window) start
+[02:30:51][S1] S1 windows: 16 configs x 101 points = 1616 GS(P) tasks
+[02:31:07][S1] Stage 1 verdicts {'rect': 'PERSISTS', 'hann': 'PERSISTS', 'hamming': 'PERSISTS', 'dpss': 'PERSISTS'}
+[02:31:07][S1] === stage 1 done in 15.9 s

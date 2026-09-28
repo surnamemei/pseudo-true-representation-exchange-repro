@@ -1,0 +1,44 @@
+{
+  "epsilon_interval": [
+    "0.2456906301722773982036098513551920308807846909441829969680288159373386741871575",
+    "0.2506906301722773982036098513551920308807846909441829969680288159373386741871575"
+  ],
+  "tested": 0,
+  "failures": 0,
+  "first_failures": []
+}
+parents 50 visited 268922 leaves 134486 unresolved 0
+parents 100 visited 637630 leaves 318865 unresolved 0
+parents 150 visited 1009690 leaves 504920 unresolved 0
+parents 200 visited 1388316 leaves 694258 unresolved 0
+parents 250 visited 1600544 leaves 800397 unresolved 0
+parents 300 visited 1620520 leaves 810410 unresolved 0
+parents 350 visited 1635488 leaves 817919 unresolved 0
+parents 400 visited 1644388 leaves 822394 unresolved 0
+parents 450 visited 1644594 leaves 822522 unresolved 0
+parents 500 visited 1668614 leaves 834557 unresolved 0
+parents 550 visited 1670258 leaves 835404 unresolved 0
+parents 600 visited 1678940 leaves 839770 unresolved 0
+parents 650 visited 1792718 leaves 896684 unresolved 0
+parents 700 visited 1849054 leaves 924877 unresolved 0
+parents 750 visited 1883152 leaves 941951 unresolved 0
+parents 800 visited 1939026 leaves 969913 unresolved 0
+{
+  "epsilon_interval": [
+    "0.2131906301722773982036098513551920308807846909441829969680288159373386741871575032047",
+    "0.2831906301722773982036098513551920308807846909441829969680288159373386741871575032047"
+  ],
+  "archived_terminal_rows": 819,
+  "visited": 1970591,
+  "leaves": 985705,
+  "unresolved": [],
+  "max_u_depth": 15,
+  "unique_frequency_boxes": 11578,
+  "complete": true,
+  "predicate_counts": {
+    "inside_Krawczyk_box": 7031,
+    "objective_excluded": 478689,
+    "gradient_excluded": 299994,
+    "krawczyk_excluded": 199991
+  }
+}
