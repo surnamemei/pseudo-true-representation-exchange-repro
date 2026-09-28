@@ -1,6 +1,34 @@
 # Reproducibility guide — current manuscript
 
-## Stage 24 final TSP revision after the adversarial validation (current)
+## Stage 25 approved transition-theory revision (current)
+
+**What changed.** One approved scientific revision of the frozen Stage 24 manuscript, confined to the noisy-estimation material:
+- **Section VIII** is retitled "Noisy estimation: predicting mode selection and global error". It adds the sealed first-order branch-selection law, P(A) ≈ Φ(−ΔJ₀/(√2σ‖r_A − r_B‖₂)) with local form Φ(−Kη), and the two-branch global-MSE approximation.
+- **Validation text.** Section VIII also reports the 30 and 40 dB validation and treats 20 dB as the stress case.
+- **Tables and figure.** Table IV (`noise_table.tex`) gains predicted-versus-observed rows, Table I gains one evidence row, and Fig. 7 draws the sealed predictions.
+- **Other text.** One sentence each in the abstract, roadmap, contribution 5, Discussion and Limitations, plus one paragraph in Supplementary S7.
+
+Page counts: main text 11, supplement 11, for both the anonymous and the named builds.
+
+**Evidence level.** The new result is a validated first-order approximation, not a theorem, certificate or bound.
+- **Provenance.** Its plan, criteria, code and predictions were sealed with SHA-256 records before the per-setting Stage-6 Monte Carlo outcomes were read. The one-shot validation outcome was STRONG_PREDICTION at 30 and 40 dB.
+- **Not blind.** The empirical widths were known beforehand, so the width comparison is not a blind test.
+- **No new data.** No new Monte Carlo was run. The two-million-draw variance check was an implementation check.
+
+**Files.**
+- `paper/transition_theory/`: plan, spec, seals, derivation, validation report and code (`paper/transition_theory/code/transition_theory.py`, `second_order_diagnostic.py`, `validate.py`).
+- `results/transition_theory/`: the deterministic predictions and the validation comparison.
+
+**Replay.** `replay_and_compare.py all T1` recomputes the deterministic predictions and compares them with the sealed files. The validation script refuses a second run; its sealed outputs are hash-recorded in `paper/transition_theory/RESULT_RECORD.sha256`.
+
+**Records of this revision.**
+- `stage25_before_revision/`: the superseded files.
+- `paper/stage25_revision_manifest.csv`: the new deliverables.
+- `paper/freeze_records/integrity_check_stage25_2026-09-28.json`: a read-only integrity check against the validation freeze manifest.
+
+No certificate script, certificate input or output, or raw validation output changed.
+
+## Stage 24 final TSP revision after the adversarial validation (superseded for Section VIII by Stage 25)
 
 **Active package.** Main source `paper/main_tsp_reviewfriendly.tex` (body in `paper/sections/body_reviewfriendly.tex`, with `continuum_stage14.tex`, `evidence_table.tex` = Table I, `crossN_table.tex` = Table II, `robustness_table.tex` = Table III, `noise_table.tex` = Table IV), PDF `paper/main_tsp_reviewfriendly.pdf` (10 IEEE two-column pages). Supplement `supplement/supplement.tex` (S1, S1b, S2–S8), PDF `supplement/supplement.pdf` (10 pages). Title: *Global Pseudo-True Representation Exchange in Under-Modelled Spectral Fitting*. Claim changes, evidence levels and file list: `paper/REVISION_NOTES.md`; skeptical assessment: `paper/FINAL_TSP_SELF_REVIEW.md`. Earlier sections of this guide remain valid for the certificate chains they describe, except where corrected below.
 

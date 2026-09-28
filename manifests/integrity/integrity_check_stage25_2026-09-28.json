@@ -1,0 +1,36 @@
+{
+ "purpose": "Stage 25 freeze: read-only integrity check after the approved transition-theory revision",
+ "time": "2026-09-28T19:12:24+1000",
+ "freeze_manifest_sha256": "1410a153ff894bec997005f830c6e41e89a431d3dfa7bfd2be14dd4b26709ab2",
+ "checked": 766,
+ "unchanged": 732,
+ "changed": 34,
+ "missing": [],
+ "changed_in_final_presubmission_record": 34,
+ "additional_changes_since_final_presubmission_record": [],
+ "additional_changes_all_manuscript_side": true,
+ "stage24_deliverables_checked": 51,
+ "stage24_deliverables_changed": [
+  "REPRODUCIBILITY_README.md",
+  "paper/CURRENT_VERSION.md",
+  "paper/REVISION_NOTES.md",
+  "paper/figure_scripts/make_revision_figures.py",
+  "paper/figures/fig7_noise_local_global.pdf",
+  "paper/main_tsp_reviewfriendly.pdf",
+  "paper/sections/body_reviewfriendly.tex",
+  "paper/sections/evidence_table.tex",
+  "paper/sections/noise_table.tex",
+  "supplement/S7_noise_methods.tex",
+  "supplement/supplement.pdf"
+ ],
+ "superseded_reviewer_archive": {
+  "zip": "TSP_REVIEWER_ARCHIVE_2026-09-28.zip",
+  "project_files_checked": 1695,
+  "changed_since_archive": [
+   "REPRODUCIBILITY_README.md",
+   "paper/figure_scripts/make_revision_figures.py",
+   "paper/figures/fig7_noise_local_global.pdf"
+  ],
+  "validation_files_changed": []
+ }
+}

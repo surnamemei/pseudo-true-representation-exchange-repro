@@ -1,0 +1,12 @@
+{
+ "seal": "SEAL_1 (plan and spec)",
+ "sealed_at_local": "2026-09-28T18:12:43+1000",
+ "sealed_at_utc": "2026-09-28T08:12:43Z",
+ "files": {
+  "00_THEORY_PLAN.md": "9fa6965ed9e519534ca96019f781b01c0b4c312b9bb35e76520c834c4fcd5e4e",
+  "transition_spec.json": "ea5f3d71b4aee6d8625ead0f9bc91c488b8888bf0c42e2cf5f40d601c6e8d0be"
+ },
+ "monte_carlo_outcomes_read_before_seal": false,
+ "outcome_information_known_before_seal": "the task statement quotes the preregistered probit widths (about 0.1295 at 30 dB, 0.0419 at 40 dB)",
+ "note": "Project is not a git repository; this SHA-256 record with read-only permissions is the freeze."
+}

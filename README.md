@@ -6,6 +6,7 @@ This repository is a code-and-data companion, not a copy of the manuscript. It c
 - **Code.** The interval-arithmetic certificate scripts (mpmath.iv), and an independent Arb/python-flint replay implementation.
 - **Records.** The machine-readable certificate records, the preregistered numerical validation behind the manuscript's robustness figures, and frozen SHA-256 manifests.
 - **Tooling.** A one-command replay that reruns the frozen scripts and compares their outputs with the archived records.
+- **First-order transition theory.** The sealed analysis behind the manuscript's noisy-estimation section: a first-order law predicting noisy branch selection and the global error near the exchange, with its one-shot validation (`transition_theory/`).
 
 ## What is certified
 
@@ -41,6 +42,20 @@ The certified results use directed interval arithmetic together with analytical 
 - **Exploratory:** real-valued sinusoids.
 - **Post-hoc sensitivity:** fixed-phase exponent fits and the 20 dB nearest-root labelling.
 
+**Validated first-order approximation** (not a theorem, certificate or bound):
+- **What it predicts.** The law P(A) ≈ Φ(−ΔJ₀/(√2σ‖r_A − r_B‖₂)) ≈ Φ(−Kη) and a two-branch mixture predict, from noiseless branch quantities and the prescribed noise level alone:
+  - the branch-selection probability near the N = 21, z = 2 exchange;
+  - its 10–90% width, which scales as σ;
+  - the global mean squared error.
+- **Validation at 30 and 40 dB.**
+  - Predicted widths are 0.1285 and 0.0406, against observed 0.1295 and 0.0419.
+  - The mean |ΔP(A)| is 0.005 and 0.002.
+  - The global MSE is within a factor 0.74–1.35 for |η| ≤ 0.1.
+- **Provenance.** The theory was sealed before the per-setting Monte Carlo outcomes were read.
+  - The empirical widths were already known, so the width comparison is not blind.
+  - No new Monte Carlo was run.
+- **Stress case.** At 20 dB, displaced A-family fits fall outside the approximation.
+
 **The critical law is not universal.** ε_c = λ_N z² + c_N z⁴ + O(z⁶) is proved for the centred phase-aligned family, where symmetry removes the first-order term. A fixed nonzero strong-pair phase gives an O(z) regime.
 
 ## Quick start
@@ -51,8 +66,8 @@ cd pseudo-true-representation-exchange
 python3 -m venv .venv && . .venv/bin/activate            # Windows: .venv\Scripts\activate
 pip install -r requirements.txt                           # or: conda env create -f environment.yml
 sha256sum -c manifests/SHA256SUMS                         # optional integrity check
-python replay/replay_and_compare.py all R1 R3 R4 R7       # short check, about 3 minutes
-python replay/replay_and_compare.py all                   # all seven chains in parallel, just under an hour
+python replay/replay_and_compare.py all R1 R3 R4 R7 T1    # short check, about 3 minutes
+python replay/replay_and_compare.py all                   # all eight chains in parallel, just under an hour
 python replay/replay_and_compare.py figures               # redraw the manuscript figures from archived results
 ```
 
@@ -77,6 +92,7 @@ Times are wall-clock seconds per chain, measured on an AMD Ryzen 9 9950X3D. Each
 | R5 | Every odd N ≥ 10,001, fixed normalized geometry | 697 | 450 |
 | R6 | N = 21 finite-width amplitude interval | 4,391 | 3,202 |
 | R7 | N = 21 lower-endpoint constants | 10 | 11 |
+| T1 | Deterministic predictions of the first-order transition theory (not a certificate) | — | 9 |
 | | **Total, single process** | **7,506 (2.1 h)** | **5,331 (1.5 h)** |
 
 The Linux replay of 2026-09-28 is recorded in [`replay/records/linux_wsl_2026-09-28/`](replay/records/linux_wsl_2026-09-28/): exit codes, runtimes, logs, output-by-output comparison, environment and file-access trace. All seven chains exited 0, and every declared output matched the archived record. Each output was byte-identical, or identical up to CRLF/LF line endings, JSON key order or elapsed-time fields. The one exception is floating-point-preconditioned enclosure values in the N ≥ 10,001 floor and the finite-width root tiling, which differ only in far digits (relative difference ≤ 3 × 10⁻¹⁴). No verdict, label or count changed.
@@ -95,7 +111,10 @@ The Linux replay of 2026-09-28 is recorded in [`replay/records/linux_wsl_2026-09
 ## Version correspondence
 
 This repository corresponds to the manuscript *Global Pseudo-True Representation Exchange in Under-Modelled Spectral Fitting* by Jinghang Mei, submitted to *IEEE Transactions on Signal Processing* (2026).
-- **Frozen scripts and records.** They are those of the reviewer archive `TSP_REVIEWER_ARCHIVE_2026-09-28`, whose ZIP has SHA-256 `96ec1e3cab961c5bca3c05ecaf0a89893615ae0e5449b29b23d401926abf119a`.
+- **Frozen scripts and records.** They are those of the reviewer archive `TSP_REVIEWER_ARCHIVE_2026-09-28_v2`, whose ZIP has SHA-256 `0c00688c760e135e4c508404042389b175958e9bb29381d90ef145bc80d80567`.
+  - That archive accompanies the Stage 25 manuscript, which integrates the approved first-order transition theory.
+  - It supersedes the first archive, `TSP_REVIEWER_ARCHIVE_2026-09-28`.
+  - No certificate script, certificate record or raw validation output differs between the two.
 - **Hash checks.** Every script and record here that is also listed in the project's 766-file freeze manifest (`numerical_validation/adversarial_overnight/freeze_manifest.json`) keeps its frozen SHA-256; `manifests/files.csv` records the check. The only exception is `docs/REPRODUCIBILITY_README.md`, documentation edited after the validation freeze. No certificate code or data differ.
 - **What is not here.** The manuscript and its figures are not part of this repository.
 
@@ -105,8 +124,9 @@ This repository corresponds to the manuscript *Global Pseudo-True Representation
 |---|---|
 | **Certified** | Small-spacing criterion (N = 11, 15, 21, 31, 41); continuum crossing; every odd N ≥ 10,001 at fixed normalized geometry; z = 2 exchanges (N = 21, 31); N = 21 finite-width amplitude interval; N = 21 lower-endpoint constants |
 | **Independent replay** (Arb; separate code, same archived partitions) | Both z = 2 crossing certificates; the continuum partition for 0 ≤ N⁻² ≤ 35,377⁻² |
-| **Original-code replay** (the frozen scripts rerun unmodified, on Windows and on Linux, 2026-09-28) | All seven chains. This is the only replay of the N ≥ 10,001 floor, the finite-width interval, the tangent instances and the lower-endpoint constants. |
+| **Original-code replay** (the frozen scripts rerun unmodified, on Windows and on Linux, 2026-09-28) | All seven certificate chains, and T1 for the transition theory. This is the only replay of the N ≥ 10,001 floor, the finite-width interval, the tangent instances and the lower-endpoint constants. |
 | **Global numerical robustness** (preregistered) | Windows; b ∈ [9.5, 10.5]; imbalance ≤ 20%; phase and record-origin offsets; matching conventions; noise Monte Carlo; solver invariance |
+| **Validated first-order approximation** (sealed before the per-setting Monte Carlo outcomes were read; compared once) | Noisy branch-selection probabilities, their σ-proportional width, and the global error near the N = 21, z = 2 exchange (30 and 40 dB; 20 dB is a stress case) |
 | **Exploratory** | Real-valued sinusoids |
 | **Post-hoc sensitivity** | Fixed-phase exponent fits; 20 dB nearest-root labelling |
 
@@ -130,8 +150,9 @@ The full table, with scopes, qualifications and record files, is in [`docs/EVIDE
 | `numerical_validation/adversarial_overnight/` | Preregistered adversarial validation: protocol, preregistration hash, freeze manifest, amendments, stage scripts, scans, analyses, reports, and the Stage-0 replay record |
 | `numerical_validation/analysis/` | Numerical results used by the manuscript's figures and text |
 | `numerical_validation/figures/` | The figure script, and the archived inputs it copies |
+| `transition_theory/` | The sealed first-order transition theory: plan, spec, seals, derivation, code, validation report, and its predictions and comparison (`results/`) |
 | `replay/` | `replay_and_compare.py`, `workspace_map.csv`, frozen hashes of outputs too large to include, and replay records |
-| `manifests/` | `SHA256SUMS` and `files.csv` for this repository, the Stage 24 revision manifest, integrity-check records, and historical artifact manifests |
+| `manifests/` | `SHA256SUMS` and `files.csv` for this repository, the Stage 24 and Stage 25 revision manifests, integrity-check records, and historical artifact manifests |
 | `docs/` | Evidence levels, replay commands, the full project reproducibility guide (`REPRODUCIBILITY_README.md`, with historical sections), and technical notes: derivations, lemmas, certificate summaries, replay reports and formula audits |
 | `examples/` | Short command sequences for common checks |
 

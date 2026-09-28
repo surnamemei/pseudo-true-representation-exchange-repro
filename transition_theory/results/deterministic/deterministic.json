@@ -1,0 +1,92 @@
+{
+ "plan_seal": {
+  "seal": "SEAL_1 (plan and spec)",
+  "sealed_at_local": "2026-09-28T18:12:43+1000",
+  "sealed_at_utc": "2026-09-28T08:12:43Z",
+  "files": {
+   "00_THEORY_PLAN.md": "9fa6965ed9e519534ca96019f781b01c0b4c312b9bb35e76520c834c4fcd5e4e",
+   "transition_spec.json": "ea5f3d71b4aee6d8625ead0f9bc91c488b8888bf0c42e2cf5f40d601c6e8d0be"
+  },
+  "monte_carlo_outcomes_read_before_seal": false,
+  "outcome_information_known_before_seal": "the task statement quotes the preregistered probit widths (about 0.1295 at 30 dB, 0.0419 at 40 dB)",
+  "note": "Project is not a git repository; this SHA-256 record with read-only permissions is the freeze."
+ },
+ "eps_c": 0.2481906301722774,
+ "eps_c_mp_crossing_root": "0.2481906301722773982036099",
+ "eta_of_mp_crossing_root": -4.7410714222417005e-17,
+ "g": 8.259051045764851,
+ "g_A": 7.1775527173340965,
+ "g_B": -1.0814983284307544,
+ "g_mp": "8.259051045764865813964474",
+ "d_norm_c": 1.3073721889711298,
+ "d_norm_c_mp": "1.30737218897113204406398",
+ "J_A_c": 0.8118078719175497,
+ "J_B_c": 0.8118078719175372,
+ "Delta0_c": 1.2434497875801753e-14,
+ "x_norm2_c": 64.89402469487906,
+ "u_A_c": [
+  -4.772447353918622,
+  0.605170320276855
+ ],
+ "u_B_c": [
+  -0.057653561926684915,
+  12.463419356801666
+ ],
+ "sqdist_uA_uB_c": 162.84735071324732,
+ "eta50_pred_exact": -6.0661440684406504e-15,
+ "eta50_pred_local": 0.0,
+ "per_snr": {
+  "20": {
+   "sigma2_c": 0.030901916521370986,
+   "sigma_c": 0.17578940958252004,
+   "s_Delta_c": 0.3250176512494942,
+   "K": 6.306793110445182,
+   "W_closed_form": 0.4064035534706604,
+   "W_exact_curve": 0.4098466978247843,
+   "eta_P090": -0.20371018226044438,
+   "eta_P010": 0.2061365155643399
+  },
+  "30": {
+   "sigma2_c": 0.0030901916521370986,
+   "sigma_c": 0.05558949228169923,
+   "s_Delta_c": 0.10277960577066729,
+   "K": 19.943830960464645,
+   "W_closed_form": 0.12851608781533147,
+   "W_exact_curve": 0.12862293869675118,
+   "eta_P090": -0.06416944386128953,
+   "eta_P010": 0.06445349483546163
+  },
+  "40": {
+   "sigma2_c": 0.00030901916521370985,
+   "sigma_c": 0.017578940958252003,
+   "s_Delta_c": 0.03250176512494942,
+   "K": 63.067931104451816,
+   "W_closed_form": 0.04064035534706604,
+   "W_exact_curve": 0.04064372805931942,
+   "eta_P090": -0.02030746033046095,
+   "eta_P010": 0.02033626772885847
+  }
+ },
+ "ratios": {
+  "W30_over_W40_closed_form": 3.162277660168379,
+  "W30_over_W40_exact_curve": 3.164644210516966,
+  "W20_over_W30_closed_form": 3.1622776601683795
+ },
+ "Phi_inv_0p9": 1.2815515655446004,
+ "environment": {
+  "python": "3.12.3",
+  "numpy": "2.3.5",
+  "scipy": "1.16.3",
+  "mpmath": "1.3.0",
+  "platform": "Linux-6.6.87.2-microsoft-standard-WSL2-x86_64-with-glibc2.39"
+ },
+ "inputs": {
+  "validation/adversarial_overnight/stage6_noise/noiseless_roots.json": "7336a74b11e3906229aa958728d1a68b77cd3aa25b040e1970837875c441ba10",
+  "validation/adversarial_overnight/advcore.py": "6c71a72c3418ac8028a4003fb7a39454d883adc87b442d786e99937149b23f83",
+  "validation/adversarial_overnight/s6_noise.py": "fca7abdd0d63a8aadc77d723c72a7b038d5b91eb8a5cf396468ad2e861a35303",
+  "validation/adversarial_overnight/advrun.py": "2660673a13aefc40addc7fb597c1d2a1067aa7a4b65261877f54a86c23dbff46",
+  "validation/adversarial_overnight/PREREGISTRATION.md": "013f43fe3eae10f36b421698d6c4449fa57ac8e3637a066bc7b777cb04d45c9a",
+  "validation/adversarial_overnight/FREEZE.md": "fe359b352c5f7904e859b9e1b2f46009fbec4598c3b9ad16daf42d9c3b1d0649"
+ },
+ "seconds": 8.618543148040771
+}

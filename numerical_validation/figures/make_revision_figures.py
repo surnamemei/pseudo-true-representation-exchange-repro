@@ -1,6 +1,7 @@
 """Regenerate the revision figures from already-completed results (no new scientific computation).
 
-Inputs: archived CSV/JSON results in the project root and in validation/adversarial_overnight/.
+Inputs: archived CSV/JSON results in the project root and in validation/adversarial_overnight/; Fig. 7 also reads
+the sealed first-order predictions in results/transition_theory/deterministic/predictions.csv.
 The only evaluation performed is the closed-form N=21 tangent loss for the explanatory Fig. 2,
 which reproduces the archived figure (stage17_tangent_landscape.py) with the new branch notation.
 """
@@ -255,7 +256,11 @@ def fig6():
 
 # ----------------------------------------------------------------------------- Fig. 7 noise
 def fig7():
+    """Monte Carlo (markers) against the sealed first-order predictions (lines). The predictions are read from
+    results/transition_theory/deterministic/predictions.csv (sealed before the comparison); nothing is recomputed."""
+    from matplotlib.lines import Line2D
     summ = list(csv.DictReader((VAL / "stage6_noise/summary.csv").open()))
+    pred = list(csv.DictReader((ROOT / "results/transition_theory/deterministic/predictions.csv").open()))
     col = {20: C1, 30: C2, 40: C3}
     mk = {20: "o", 30: "s", 40: "^"}
     fig, ax = plt.subplots(1, 3, figsize=(DOUBLE, 2.55))
@@ -265,20 +270,26 @@ def fig7():
         p = np.array([float(r["P_A"]) for r in ss])
         lo = np.clip(p - np.array([float(r["P_A_lo"]) for r in ss]), 0, None)
         hi = np.clip(np.array([float(r["P_A_hi"]) for r in ss]) - p, 0, None)
-        ax[0].errorbar(e, p, yerr=[lo, hi], fmt=mk[snr] + "-", ms=3.5, lw=1.1, color=col[snr], capsize=1.5,
+        ax[0].errorbar(e, p, yerr=[lo, hi], fmt=mk[snr], ms=3.5, lw=1.1, color=col[snr], capsize=1.5,
                        label=f"{snr} dB")
+        pp = sorted([r for r in pred if int(r["snr"]) == snr], key=lambda r: float(r["eta"]))
+        ax[0].plot([float(r["eta"]) for r in pp], [float(r["P_A"]) for r in pp], "-", lw=1.0, color=col[snr])
     ax[0].set(xlabel=r"$\eta=(\epsilon-\epsilon_c)/\epsilon_c$", ylabel=r"$P(\mathrm{select}\ \mathcal{A})$",
               title="Branch selection")
-    ax[0].legend(frameon=False, loc="upper right")
+    h, l = ax[0].get_legend_handles_labels()
+    ax[0].legend(h + [Line2D([], [], color=MUTED, lw=1.0)], l + ["first-order law"], frameon=False, loc="upper right")
     style(ax[0])
     tag(ax[0], "(a)")
     for a, snr, t in ((ax[1], 30, "(b)"), (ax[2], 40, "(c)")):
         ss = sorted([r for r in summ if int(r["snr"]) == snr], key=lambda r: float(r["eta"]))
         e = [float(r["eta"]) for r in ss]
+        pp = sorted([r for r in pred if int(r["snr"]) == snr], key=lambda r: float(r["eta"]))
 
         def val(r, k):
             return float(r[k]) if r.get(k) not in (None, "") else np.nan
-        a.semilogy(e, [val(r, "MSE_to_winner") for r in ss], "-", color=INK, lw=1.6, label="global MSE (all records)")
+        a.semilogy(e, [val(r, "MSE_to_winner") for r in ss], "D", ms=3.2, color=INK, label="global MSE (all records)")
+        a.semilogy([float(r["eta"]) for r in pp], [float(r["MSE_pred"]) for r in pp], "-", color=INK, lw=1.2,
+                   label="two-branch prediction")
         a.semilogy(e, [val(r, "cond_MSE_own_A") if int(float(r.get("cond_n_A") or 0)) >= 20 else np.nan for r in ss],
                    "o", ms=3.5, color=C1, label=BA + "-conditioned MSE")
         a.semilogy(e, [val(r, "cond_MSE_own_B") if int(float(r.get("cond_n_B") or 0)) >= 20 else np.nan for r in ss],

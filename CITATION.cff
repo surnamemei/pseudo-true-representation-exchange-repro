@@ -20,6 +20,7 @@ keywords:
   - computer-assisted proof
 abstract: >-
   Directed-rounding interval certificates (mpmath.iv), an independent Arb/python-flint replay
-  implementation, preregistered numerical validation data and SHA-256 manifests for a study of
+  implementation, preregistered numerical validation data, a sealed first-order prediction of
+  noisy branch selection with its one-shot validation, and SHA-256 manifests for a study of
   global pseudo-true representation exchange in fixed-order (under-modelled) least-squares
   spectral fitting.

@@ -1,0 +1,23 @@
+{
+ "note": "diagnostic only; not used in any prediction or classification",
+ "tr_HinvG_A": 5.604148824100564,
+ "tr_HinvG_B": 5.75309228116609,
+ "correctly_specified_value": 6.0,
+ "per_snr": {
+  "20": {
+   "E_qA_minus_qB": -0.002301319138321643,
+   "crossing_shift_eta": -0.0011226937814421925,
+   "shift_over_W": -0.002762509756261872
+  },
+  "30": {
+   "E_qA_minus_qB": -0.00023013191383216427,
+   "crossing_shift_eta": -0.00011226937814421926,
+   "shift_over_W": -0.0008735822888224112
+  },
+  "40": {
+   "E_qA_minus_qB": -2.3013191383216425e-05,
+   "crossing_shift_eta": -1.1226937814421925e-05,
+   "shift_over_W": -0.00027625097562618717
+  }
+ }
+}

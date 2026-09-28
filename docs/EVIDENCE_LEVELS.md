@@ -2,7 +2,7 @@
 
 This table states, for each result, how it is supported and how far it has been replayed. It follows Table I of the manuscript and Supplementary Sections S5 and S8.
 
-The replays run the seven chains R1–R7 of `replay_tools/replay_and_compare.py`; chain definitions are in the README.
+The replays run the chains R1–R7 and T1 of the replay tool (`replay_tools/replay_and_compare.py` in the reviewer archive, `replay/replay_and_compare.py` in the repository); chain definitions are in the README.
 
 ## Level definitions
 
@@ -15,6 +15,10 @@ The replays run the seven chains R1–R7 of `replay_tools/replay_and_compare.py`
   It is not a proof-assistant formalization and not third-party review.
 - **Original-code replay.** The frozen primary scripts were rerun unmodified in a clean copy of the project, with every expected output deleted first. The rerun outputs were compared with the archived records: on Windows 11 (Stage 0 of the adversarial validation, 2026-09-28) and on Linux/WSL2 (2026-09-28).
 - **Global numerical robustness.** Full-torus numerical global searches run under the preregistered adversarial protocol (`validation/adversarial_overnight/PREREGISTRATION.md`). They are not interval certificates.
+- **Validated first-order approximation.** An analytical approximation computed only from deterministic (noiseless) quantities and the prescribed noise level.
+  - Its plan, pass/fail criteria, code and predictions were sealed with SHA-256 records before the preregistered Monte Carlo outcomes it predicts were read.
+  - It was then compared with them once.
+  - It is not a theorem, certificate or bound.
 - **Numerical, outside the protocol.** Earlier or supplementary numerical computations: not preregistered and not certified.
 - **Exploratory.** Results the manuscript itself labels exploratory; context only.
 - **Post-hoc sensitivity.** Analyses chosen after seeing preregistered results. They are reported, but they do not change any preregistered classification.
@@ -38,6 +42,7 @@ The replays run the seven chains R1–R7 of `replay_tools/replay_and_compare.py`
 | Phase / record-origin offsets | δ = χz with \|χ\| ≤ 0.2; δ ≤ 0.6 rad at z = 2 | **Global numerical robustness**, plus the existential theorem above | — | — | `validation/.../stage2_phase/` |
 | Matching conventions across N | Fixed normalized versus fixed physical frequencies | Global numerical (preregistered) | — | — | `validation/.../stage5_matching/` |
 | Noisy estimation: local covariance versus global error | N = 21, z = 2; 20, 30, 40 dB; 39,000 records | Numerical Monte Carlo. A local approximation, not a bound; the 20 dB width is labelling-sensitive. | — | — | `validation/.../stage6_noise/` |
+| Noisy branch selection and global error near the exchange: first-order law P(A) ≈ Φ(−ΔJ₀/(√2σ‖r_A − r_B‖₂)) ≈ Φ(−Kη), and two-branch MSE | N = 21, z = 2; validated at 30 and 40 dB; 20 dB is a stress case | **Validated first-order approximation**, outcome STRONG_PREDICTION under the pre-declared criteria. At 30 and 40 dB:<br>• predicted widths 0.1285 and 0.0406 against observed 0.1295 and 0.0419;<br>• mean \|ΔP(A)\| 0.005 and 0.002;<br>• global MSE within a factor 0.74–1.35 for \|η\| ≤ 0.1.<br>Sealed before the per-setting outcomes were read, but the widths were known beforehand, so the width comparison is not blind. At 20 dB, displaced A-family fits (1–10%) fall outside the approximation. | — | The deterministic predictions are recomputed by T1. The one-shot validation is not rerun. | `paper/transition_theory/`, `results/transition_theory/` |
 | Solver, precision and tolerance invariance | All preregistered stages | Numerical (preregistered) | — | — | `validation/.../stage7_numinv/` |
 | Model-order (BIC) check | 1,080 records, 20–40 dB | Numerical, outside the protocol; order three selected in every record | — | — | `order_selection_sanity.*` |
 | Real-valued sinusoids | Two carriers | **Exploratory** | — | — | `validation/.../stage8_real/` |
@@ -52,5 +57,6 @@ The replays run the seven chains R1–R7 of `replay_tools/replay_and_compare.py`
 - Behaviour at fixed physical frequencies as N grows.
 - A universal z² law.
 - A formal CRB or MCRB failure.
+- A theorem or bound for noisy branch selection: the selection law and the two-branch error are a validated first-order approximation for one configuration.
 - A failure of model-order selection.
 - Independent Arb replay of every certified result: the N ≥ 10,001 floor, the N = 21 finite-width amplitude interval, the five tangent instances and the lower-endpoint constants have original-code replay only.

@@ -5,7 +5,7 @@ output with the archived frozen record.
 Usage, from the directory that contains this tool's parent (the archive or repository root):
 
     python <tools>/replay_and_compare.py prepare [--work DIR]
-    python <tools>/replay_and_compare.py run     [--work DIR] [R1 R2 ...]   # default: all chains, in parallel
+    python <tools>/replay_and_compare.py run     [--work DIR] [R1 R2 ... T1] # default: all chains, in parallel
     python <tools>/replay_and_compare.py compare [--work DIR]
     python <tools>/replay_and_compare.py all     [--work DIR] [R1 R2 ...]   # prepare + run + compare
     python <tools>/replay_and_compare.py figures [--work DIR]              # redraw the manuscript figures
@@ -25,8 +25,14 @@ predicate names, labels and integer counts must match exactly. Outputs too large
 by SHA-256 with frozen_output_hashes.json, both as frozen (CRLF line endings written on Windows) and after
 CRLF->LF conversion.
 
-The chain definitions are those of validation/adversarial_overnight/tools/replay_sandbox.py, the
+The chain definitions R1-R7 are those of validation/adversarial_overnight/tools/replay_sandbox.py, the
 Stage-0 tool used for the manuscript's replay record.
+
+Chain T1 (added with the approved Stage-25 revision) recomputes the deterministic part of the sealed
+first-order transition theory (paper/transition_theory/): the branch quantities, the envelope slope and its
+checks, and every predicted selection probability and global error. The one-shot validation against the
+Monte Carlo is not a chain and is never rerun. For T1, fields that are roundoff-level diagnostics of the
+checks (finite-difference residuals, synthetic-sample moments) are reported but not held to NUMERIC_TOL.
 """
 from __future__ import annotations
 
@@ -89,7 +95,19 @@ CHAINS = {
     "R7_lower_transition": dict(
         cmds=[["stage13_build.py"]],
         outputs=["lower_transition_certificate.json", "tangent_cost_vs_lambda.csv", "smallz_global_regimes.csv"]),
+    "T1_transition_theory": dict(
+        cmds=[["paper/transition_theory/code/transition_theory.py"],
+              ["paper/transition_theory/code/second_order_diagnostic.py"]],
+        outputs=["results/transition_theory/deterministic/predictions.csv",
+                 "results/transition_theory/deterministic/deterministic.json",
+                 "results/transition_theory/deterministic/checks.json",
+                 "results/transition_theory/deterministic/second_order_diagnostic.json"],
+        diagnostic=("rel_diff", "abs_diff", "g_fd", "fd_check", "sample_", "var_ratio", "mean_over_sd", "delta0_resid",
+                    "grad_norm", "environment", "seconds")),
 }
+# Declared outputs that the figure script reads: `figures` restores the archived copy when a prepared
+# workspace lacks it (Fig. 7 draws the sealed predictions).
+FIGURE_INPUTS = ("results/transition_theory/deterministic/predictions.csv",)
 DEPS = {"R4_independent_arb_N0": ["R3_continuum"], "R5_largeN_floor_10001": ["R3_continuum"]}
 SHORT = {k.split("_")[0]: k for k in CHAINS}
 VOLATILE = ("second", "elapsed", "runtime", "time", "timestamp", "date", "prepared", "started", "finished",
@@ -162,9 +180,11 @@ def run_chain(work, name):
                MPLBACKEND="Agg", PYTHONDONTWRITEBYTECODE="1")
     rec = dict(status="running", started=time.strftime("%Y-%m-%dT%H:%M:%S%z"), steps=[])
     _save(work, name, rec)
+    for o in CHAINS[name]["outputs"]:          # a crash must never leave an older copy to be compared
+        (work / o).unlink(missing_ok=True)
     ok = True
     for cmd in CHAINS[name]["cmds"]:
-        tag = f"{name}__{'_'.join(cmd).replace('.py', '').replace('.', 'p')}"
+        tag = f"{name}__{'_'.join(cmd).replace('.py', '').replace('.', 'p').replace('/', '_')}"
         t0 = time.time()
         with (logs / f"{tag}.log").open("w", encoding="utf-8") as lf:
             p = subprocess.Popen([sys.executable, "-u"] + cmd, cwd=work, env=env, stdout=lf, stderr=subprocess.STDOUT)
@@ -230,13 +250,16 @@ def _nums(v):
     return None
 
 
-def _classify(pairs):
-    res = dict(numeric=0, hash=0, volatile=0, other=0, max_rel=Decimal(0), worst=None, other_examples=[])
+def _classify(pairs, diagnostic=()):
+    res = dict(numeric=0, hash=0, volatile=0, diagnostic=0, other=0, max_rel=Decimal(0), worst=None, other_examples=[])
     for key, a, b in pairs:
         if a == b:
             continue
         if any(t in key.lower() for t in VOLATILE):
             res["volatile"] += 1
+            continue
+        if any(t in key.lower() for t in diagnostic):
+            res["diagnostic"] += 1
             continue
         if isinstance(a, str) and isinstance(b, str) and re.fullmatch(r"[0-9a-f]{64}", a) and re.fullmatch(r"[0-9a-f]{64}", b):
             res["hash"] += 1
@@ -290,7 +313,7 @@ def _sha_lf(p):
     return h.hexdigest()
 
 
-def compare_file(frozen: Path | None, replay: Path, frozen_hash: dict | None):
+def compare_file(frozen: Path | None, replay: Path, frozen_hash: dict | None, diagnostic=()):
     if not replay.exists():
         return dict(verdict="FAIL", reason="output missing after replay")
     if frozen is None or not frozen.exists():
@@ -321,7 +344,7 @@ def compare_file(frozen: Path | None, replay: Path, frozen_hash: dict | None):
                     return dict(verdict="FAIL", reason="line count differs")
             if not pairs:
                 return dict(verdict="PASS", reason="identical after normalizing line endings (CRLF from Windows text mode)")
-            res = _classify(pairs)
+            res = _classify(pairs, diagnostic)
         else:
             fa = _flatten(json.loads(frozen.read_text()))
             fb = _flatten(json.loads(replay.read_text()))
@@ -330,15 +353,15 @@ def compare_file(frozen: Path | None, replay: Path, frozen_hash: dict | None):
             if set(fa) != set(fb):
                 return dict(verdict="FAIL", reason="JSON keys differ",
                             keys=sorted(set(fa) ^ set(fb))[:10])
-            res = _classify((k, fa[k], fb[k]) for k in sorted(fa))
+            res = _classify(((k, fa[k], fb[k]) for k in sorted(fa)), diagnostic)
     elif frozen.suffix == ".csv":
         ra = list(csv.reader(open(frozen, encoding="utf-8", newline="")))
         rb = list(csv.reader(open(replay, encoding="utf-8", newline="")))
         if len(ra) != len(rb) or any(len(x) != len(y) for x, y in zip(ra, rb)):
             return dict(verdict="FAIL", reason="CSV shape differs")
         hdr = ra[0] if ra else []
-        res = _classify((f"row{i}.{hdr[j] if j < len(hdr) else j}", u, v)
-                        for i, (x, y) in enumerate(zip(ra, rb)) for j, (u, v) in enumerate(zip(x, y)))
+        res = _classify(((f"row{i}.{hdr[j] if j < len(hdr) else j}", u, v)
+                         for i, (x, y) in enumerate(zip(ra, rb)) for j, (u, v) in enumerate(zip(x, y))), diagnostic)
     elif frozen.suffix == ".md":
         la, lb = frozen.read_text().splitlines(), replay.read_text().splitlines()
         if len(la) != len(lb):
@@ -350,15 +373,16 @@ def compare_file(frozen: Path | None, replay: Path, frozen_hash: dict | None):
                 pairs.append((f"line{i}", x, y))
             else:
                 pairs += [(f"line{i}.tok{k}", u, v) for k, (u, v) in enumerate(zip(tx, ty))]
-        res = _classify(pairs)
+        res = _classify(pairs, diagnostic)
     else:
         return dict(verdict="UNVERIFIED", reason="binary file differs")
     ok = res["other"] == 0 and res["max_rel"] <= NUMERIC_TOL
     return dict(verdict="PASS" if ok else "FAIL",
-                reason=("differences confined to " + ", ".join(k for k in ("numeric", "hash", "volatile") if res[k])
+                reason=("differences confined to " + ", ".join(k for k in ("numeric", "hash", "volatile", "diagnostic") if res[k])
                         if ok else "non-numeric difference or numeric difference above tolerance"),
                 numeric_values_differing=res["numeric"], max_relative_numeric_difference=f"{res['max_rel']:.3e}",
                 worst_numeric=res["worst"], hash_fields=res["hash"], volatile_fields=res["volatile"],
+                diagnostic_fields=res["diagnostic"],
                 other_differences=res["other"], other_examples=res["other_examples"])
 
 
@@ -377,7 +401,7 @@ def compare(work, names=None):
         rows = {}
         for o in c["outputs"]:
             frozen = BASE / src_of[o] if o in src_of else None
-            rows[o] = compare_file(frozen, work / o, hashes.get(o))
+            rows[o] = compare_file(frozen, work / o, hashes.get(o), c.get("diagnostic", ()))
         exit_ok = st.get("status") == "done"
         chain_pass = exit_ok and all(r["verdict"] == "PASS" for r in rows.values())
         all_pass &= chain_pass
@@ -404,6 +428,12 @@ def figures(work):
         raise SystemExit("run 'prepare' first (the figure script is copied into the workspace)")
     for d in ("paper/figures", "supplement/figures"):
         (work / d).mkdir(parents=True, exist_ok=True)
+    src_of = {w: s for w, s in workspace_map()}
+    for rel in FIGURE_INPUTS:
+        if not (work / rel).exists() and rel in src_of:
+            (work / rel).parent.mkdir(parents=True, exist_ok=True)
+            shutil.copy2(BASE / src_of[rel], work / rel)
+            print(f"restored the archived {rel} for the figure script")
     env = dict(os.environ, MPLBACKEND="Agg", PYTHONDONTWRITEBYTECODE="1")
     r = subprocess.run([sys.executable, str(script.relative_to(work))], cwd=work, env=env)
     outs = sorted(str(p.relative_to(work)) for d in ("paper/figures", "supplement/figures")
@@ -415,7 +445,7 @@ def figures(work):
 def main():
     ap = argparse.ArgumentParser(description=__doc__.split("\n\n")[0])
     ap.add_argument("action", choices=["prepare", "run", "compare", "all", "figures"])
-    ap.add_argument("chains", nargs="*", help="R1..R7 (default: all)")
+    ap.add_argument("chains", nargs="*", help="R1..R7, T1 (default: all)")
     ap.add_argument("--work", default="_replay_work")
     a = ap.parse_args()
     work = Path(a.work).resolve()

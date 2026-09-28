@@ -1,0 +1,16 @@
+{
+ "record": "post-validation result record (one-shot validation already run; outputs read-only)",
+ "recorded_at_local": "2026-09-28T18:26:54+1000",
+ "outcome": "STRONG_PREDICTION",
+ "validation_run_at": "2026-09-28T18:19:55+1000",
+ "seal_1_digest": "6051209b333985ac5c79d7e6699703b3db4c669f56caaddc8350de9d88e7783b",
+ "seal_2_digest": "11ff99d6615eeb89e6957aa08ffc038ba573054308bd53964e928740d3b67f47",
+ "files": {
+  "paper/transition_theory/VALIDATION_REPORT.md": "80ea4fe6295c980e0c326237d878015c09c1242829046197b5f4a8b2b65e1abd",
+  "results/transition_theory/validation/comparison.csv": "365979dfca7d2bcf3991afec4beef16642b2801b67ee5856fd954e90a08c9fb5",
+  "results/transition_theory/validation/transition_theory_validation.pdf": "33bc676538a3c91cae2858d10a799e61fb833003cfd9ee9b7f18fd495516dfdb",
+  "results/transition_theory/validation/transition_theory_validation.png": "d7ae6ed8241ce9b332897bfa10eee0ea0290b8fe0b65f16bcb23de6c74400e95",
+  "results/transition_theory/validation/validation.json": "40e677c2c7ad1cf3899d0b0d7ed4dad87985443d0e12d111d9a0d6329ef1dd8c"
+ },
+ "manuscript_modified": false
+}
